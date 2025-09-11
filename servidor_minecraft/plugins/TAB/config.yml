@@ -1,30 +1,18 @@
-layout:
+change-prefix-suffix-in-tablist: true
+change-prefix-suffix-in-nametags: true
+do-not-move-spectators: false
+belowname-objective:
   enabled: true
-  direction: COLUMNS
-  default-skin: mineskin:383747683
-  enable-remaining-players-text: true
-  remaining-players-text: '&7... y &b%s &7más'
-  empty-slot-ping-value: 1000
-  layouts:
-    default:
-      fixed-slots:
-      - 1|%animation:MyAnimation1%
-      - 2|&aBienvenido, &f%player%
-      - '3|&7Rango: &f%group%'
-      - '4|&7Ping: &f%ping%ms'
-      - '5|&7Mundo: &f%world%'
-      - '6|&7Jugadores: &f%online%'
-      - '7|&7Hora: &f%time%'
-      - '8|&7Web: &b%animation:web%'
-      - 9|%animation:MyAnimation1%
-      groups:
-        staff:
-          condition: permission:tab.staff
-          slots:
-          - 10-20
-        players:
-          slots:
-          - 21-80
+  fancy-value-default: NPC
+  fancy-value: '&c%health%'
+  value: '%health%'
+  title: '&c❤'
+tablist-name-formatting:
+  enabled: true
+  default:
+    prefix: '&7[Jugador] '
+    suffix: ''
+    name: '%player%'
 prevent-spectator-effect:
   enabled: false
 debug: false
@@ -42,22 +30,21 @@ primary-group-finding-list:
 - Admin
 - Helper
 - default
-belowname-objective:
-  fancy-value-default: NPC
-  fancy-value: '&c%health%'
-  enabled: false
+playerlist-objective:
+  enabled: true
+  value: '%ping%ms'
+  fancy-value: '&7Ping: %ping%'
+  title: TAB
+  render-type: INTEGER
 global-playerlist:
   update-latency: false
   enabled: false
-playerlist-objective:
-  title: TAB
-  value: ''
-  render-type: INTEGER
-  enabled: true
 bossbar:
   enabled: false
 header-footer:
   enabled: true
+layout:
+  enabled: false
 mysql:
   enabled: false
 per-world-playerlist:
@@ -68,5 +55,3 @@ scoreboard:
   enabled: false
 scoreboard-teams:
   enabled: true
-tablist-name-formatting:
-  enabled: false

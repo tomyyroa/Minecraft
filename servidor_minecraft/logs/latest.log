@@ -840,3 +840,270 @@ java.lang.IllegalArgumentException: ACACIA_WALL_HANGING_SIGN isn't an item
 [05:25:40] [Server thread/INFO]: [TAB] [WARN] Failed to load skin by id: No skin with the id '383747683' was found
 [05:25:40] [Server thread/INFO]: [TAB] [WARN] Found a total of 27 issues.
 [05:25:40] [Server thread/INFO]: [TAB] Enabled in 60ms
+[05:26:28] [Server thread/ERROR]: Could not pass event CreatureSpawnEvent to SimpleLevelsPlugin v1.0
+java.lang.IllegalArgumentException: Health value (1030.0) must be between 0 and 1024.0. (attribute base value: 1030.0)
+	at com.google.common.base.Preconditions.checkArgument(Preconditions.java:483) ~[guava-33.3.1-jre.jar:?]
+	at org.bukkit.craftbukkit.entity.CraftLivingEntity.setHealth(CraftLivingEntity.java:120) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at Simple Levels 1.5.1.jar/simplelevels.simplelevelsplugin.Mobs.onEntitySpawn(Mobs.java:101) ~[Simple Levels 1.5.1.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.21.8-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:71) ~[paper-api-1.21.8-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperEventManager.callEvent(PaperEventManager.java:54) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.callEvent(PaperPluginManagerImpl.java:131) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:628) ~[paper-api-1.21.8-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.event.CraftEventFactory.callCreatureSpawnEvent(CraftEventFactory.java:689) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at org.bukkit.craftbukkit.event.CraftEventFactory.doEntityAddEventCalling(CraftEventFactory.java:605) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.level.ServerLevel.addEntity(ServerLevel.java:1550) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.level.ServerLevel.addFreshEntity(ServerLevel.java:1477) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.block.entity.BeehiveBlockEntity.releaseOccupant(BeehiveBlockEntity.java:259) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.block.entity.BeehiveBlockEntity.releaseOccupant(BeehiveBlockEntity.java:226) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.block.entity.BeehiveBlockEntity.tickOccupants(BeehiveBlockEntity.java:325) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.block.entity.BeehiveBlockEntity.serverTick(BeehiveBlockEntity.java:343) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.chunk.LevelChunk$BoundTickingBlockEntity.tick(LevelChunk.java:929) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.chunk.LevelChunk$RebindableTickingBlockEntityWrapper.tick(LevelChunk.java:999) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.Level.tickBlockEntities(Level.java:1466) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.level.ServerLevel.tick(ServerLevel.java:819) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1724) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1530) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1252) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:310) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[05:26:30] [Server thread/INFO]: [UltimateShop] Auto saving data...
+[05:26:30] [Server thread/INFO]: [UltimateShop] If this lead to server TPS drop, you should consider disable auto save feature at config.yml!
+[05:29:16] [Server thread/INFO]: futira issued server command: /tab reload
+[05:29:16] [Server thread/INFO]: [TAB] Disabled in 0ms
+[05:29:16] [Server thread/INFO]: [TAB] Performing configuration conversion from 4.0.9 to 4.1.0
+[05:29:16] [Server thread/INFO]: [TAB] Performing configuration conversion from 5.0.1 to 5.0.2
+[05:29:16] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholder-refresh-intervals: Missing configuration section "placeholder-refresh-intervals.default-refresh-interval" of type Integer, using default value 500.
+[05:29:16] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholders: Missing configuration section "placeholders.date-format" of type String, using default value dd.MM.yyyy.
+[05:29:16] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholders: Missing configuration section "placeholders.time-format" of type String, using default value [HH:mm:ss / h:mm a].
+[05:29:16] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholders: Missing configuration section "placeholders.time-offset" of type Number, using default value 0.
+[05:29:16] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholders: Missing configuration section "placeholders.register-tab-expansion" of type Boolean, using default value false.
+[05:29:16] [Server thread/INFO]: [TAB] [WARN] [config.yml] belowname-objective: Missing configuration section "belowname-objective.disable-condition" of type String, using default value %world%=disabledworld.
+[05:29:16] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer: Missing configuration section "header-footer.header" of type List, using default value [].
+[05:29:16] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer: Missing configuration section "header-footer.footer" of type List, using default value [].
+[05:29:16] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer: Missing configuration section "header-footer.disable-condition" of type String, using default value %world%=disabledworld.
+[05:29:16] [Server thread/INFO]: [TAB] [WARN] [config.yml] playerlist-objective: "value" is set to "%ping%ms", but this will never evaluate to a number. If you want text without limits, update to 1.20.3+ and use fancy-value. If you already did, set "value" to 0 as it is not displayed anyway.
+[05:29:16] [Server thread/INFO]: [TAB] [WARN] [config.yml] playerlist-objective: Missing configuration section "playerlist-objective.disable-condition" of type String, using default value %world%=disabledworld.
+[05:29:16] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.case-sensitive-sorting" of type Boolean, using default value true.
+[05:29:16] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.sorting-types" of type List, using default value [].
+[05:29:16] [Server thread/INFO]: [TAB] [WARN] [config.yml] tablist-name-formatting: Configuration section "tablist-name-formatting" has unknown key "default". Valid keys: [enabled, disable-condition]
+[05:29:16] [Server thread/INFO]: [TAB] [WARN] [config.yml] tablist-name-formatting: Missing configuration section "tablist-name-formatting.disable-condition" of type String, using default value %world%=disabledworld.
+[05:29:16] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.enable-collision" of type Object, using default value true.
+[05:29:16] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.invisible-nametags" of type Boolean, using default value false.
+[05:29:16] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.can-see-friendly-invisibles" of type Boolean, using default value false.
+[05:29:16] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.disable-condition" of type String, using default value %world%=disabledworld.
+[05:29:16] [Server thread/INFO]: [TAB] Performing configuration conversion from 2.8.10 to 2.9.0
+[05:29:16] [Server thread/INFO]: [TAB] [WARN] [animations.yml] .welcome: Configuration section ".welcome.change-interval" is expected to be of type Integer, but was String
+[05:29:16] [Server thread/INFO]: [TAB] [WARN] [animations.yml] .welcome: Animation "welcome" does not define change-interval! Did you forget to configure it? Using 1000.
+[05:29:16] [Server thread/INFO]: [TAB] [WARN] [animations.yml] .server-name: Configuration section ".server-name.change-interval" is expected to be of type Integer, but was String
+[05:29:16] [Server thread/INFO]: [TAB] [WARN] [animations.yml] .server-name: Animation "server-name" does not define change-interval! Did you forget to configure it? Using 1000.
+[05:29:16] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "default" defined for group "groups". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix, header, footer]
+[05:29:16] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "vip" defined for group "groups". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix, header, footer]
+[05:29:16] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "admin" defined for group "groups". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix, header, footer]
+[05:29:16] [Server thread/INFO]: [TAB] [WARN] [users.yml] Unknown property "Notch" defined for user "users". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix, header, footer]
+[05:29:16] [Server thread/INFO]: [TAB] [WARN] [users.yml] Unknown property "Steve" defined for user "users". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix, header, footer]
+[05:29:16] [Server thread/INFO]: [TAB] [WARN] Playerlist objective value is configured to show "%ping%ms", but returned "166ms" for player futira, which cannot be evaluated to a number.
+[05:29:16] [Server thread/INFO]: [TAB] [WARN] Found a total of 28 issues.
+[05:29:16] [Server thread/INFO]: [TAB] Enabled in 68ms
+[05:29:23] [Async Chat Thread - #1/INFO]: [Not Secure] <futira> a
+[05:29:25] [Server thread/INFO]: futira issued server command: /tab reload
+[05:29:25] [Server thread/INFO]: [TAB] Disabled in 1ms
+[05:29:25] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholder-refresh-intervals: Missing configuration section "placeholder-refresh-intervals.default-refresh-interval" of type Integer, using default value 500.
+[05:29:25] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholders: Missing configuration section "placeholders.date-format" of type String, using default value dd.MM.yyyy.
+[05:29:25] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholders: Missing configuration section "placeholders.time-format" of type String, using default value [HH:mm:ss / h:mm a].
+[05:29:25] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholders: Missing configuration section "placeholders.time-offset" of type Number, using default value 0.
+[05:29:25] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholders: Missing configuration section "placeholders.register-tab-expansion" of type Boolean, using default value false.
+[05:29:25] [Server thread/INFO]: [TAB] [WARN] [config.yml] belowname-objective: Missing configuration section "belowname-objective.disable-condition" of type String, using default value %world%=disabledworld.
+[05:29:25] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer: Missing configuration section "header-footer.header" of type List, using default value [].
+[05:29:25] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer: Missing configuration section "header-footer.footer" of type List, using default value [].
+[05:29:25] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer: Missing configuration section "header-footer.disable-condition" of type String, using default value %world%=disabledworld.
+[05:29:25] [Server thread/INFO]: [TAB] [WARN] [config.yml] playerlist-objective: "value" is set to "%ping%ms", but this will never evaluate to a number. If you want text without limits, update to 1.20.3+ and use fancy-value. If you already did, set "value" to 0 as it is not displayed anyway.
+[05:29:25] [Server thread/INFO]: [TAB] [WARN] [config.yml] playerlist-objective: Missing configuration section "playerlist-objective.disable-condition" of type String, using default value %world%=disabledworld.
+[05:29:25] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.case-sensitive-sorting" of type Boolean, using default value true.
+[05:29:25] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.sorting-types" of type List, using default value [].
+[05:29:25] [Server thread/INFO]: [TAB] [WARN] [config.yml] tablist-name-formatting: Configuration section "tablist-name-formatting" has unknown key "default". Valid keys: [enabled, disable-condition]
+[05:29:25] [Server thread/INFO]: [TAB] [WARN] [config.yml] tablist-name-formatting: Missing configuration section "tablist-name-formatting.disable-condition" of type String, using default value %world%=disabledworld.
+[05:29:25] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.enable-collision" of type Object, using default value true.
+[05:29:25] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.invisible-nametags" of type Boolean, using default value false.
+[05:29:25] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.can-see-friendly-invisibles" of type Boolean, using default value false.
+[05:29:25] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.disable-condition" of type String, using default value %world%=disabledworld.
+[05:29:25] [Server thread/INFO]: [TAB] [WARN] [animations.yml] .welcome: Configuration section ".welcome.change-interval" is expected to be of type Integer, but was String
+[05:29:25] [Server thread/INFO]: [TAB] [WARN] [animations.yml] .welcome: Animation "welcome" does not define change-interval! Did you forget to configure it? Using 1000.
+[05:29:25] [Server thread/INFO]: [TAB] [WARN] [animations.yml] .server-name: Configuration section ".server-name.change-interval" is expected to be of type Integer, but was String
+[05:29:25] [Server thread/INFO]: [TAB] [WARN] [animations.yml] .server-name: Animation "server-name" does not define change-interval! Did you forget to configure it? Using 1000.
+[05:29:25] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "default" defined for group "groups". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix, header, footer]
+[05:29:25] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "vip" defined for group "groups". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix, header, footer]
+[05:29:25] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "admin" defined for group "groups". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix, header, footer]
+[05:29:25] [Server thread/INFO]: [TAB] [WARN] [users.yml] Unknown property "Notch" defined for user "users". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix, header, footer]
+[05:29:25] [Server thread/INFO]: [TAB] [WARN] [users.yml] Unknown property "Steve" defined for user "users". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix, header, footer]
+[05:29:25] [Server thread/INFO]: [TAB] [WARN] Playerlist objective value is configured to show "%ping%ms", but returned "166ms" for player futira, which cannot be evaluated to a number.
+[05:29:25] [Server thread/INFO]: [TAB] [WARN] Found a total of 28 issues.
+[05:29:25] [Server thread/INFO]: [TAB] Enabled in 7ms
+[05:29:36] [Server thread/INFO]: futira issued server command: /tab reload
+[05:29:36] [Server thread/INFO]: [TAB] Disabled in 0ms
+[05:29:36] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholder-refresh-intervals: Missing configuration section "placeholder-refresh-intervals.default-refresh-interval" of type Integer, using default value 500.
+[05:29:36] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholders: Missing configuration section "placeholders.date-format" of type String, using default value dd.MM.yyyy.
+[05:29:36] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholders: Missing configuration section "placeholders.time-format" of type String, using default value [HH:mm:ss / h:mm a].
+[05:29:36] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholders: Missing configuration section "placeholders.time-offset" of type Number, using default value 0.
+[05:29:36] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholders: Missing configuration section "placeholders.register-tab-expansion" of type Boolean, using default value false.
+[05:29:36] [Server thread/INFO]: [TAB] [WARN] [config.yml] belowname-objective: Missing configuration section "belowname-objective.disable-condition" of type String, using default value %world%=disabledworld.
+[05:29:36] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer: Missing configuration section "header-footer.header" of type List, using default value [].
+[05:29:36] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer: Missing configuration section "header-footer.footer" of type List, using default value [].
+[05:29:36] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer: Missing configuration section "header-footer.disable-condition" of type String, using default value %world%=disabledworld.
+[05:29:36] [Server thread/INFO]: [TAB] [WARN] [config.yml] playerlist-objective: "value" is set to "%ping%ms", but this will never evaluate to a number. If you want text without limits, update to 1.20.3+ and use fancy-value. If you already did, set "value" to 0 as it is not displayed anyway.
+[05:29:36] [Server thread/INFO]: [TAB] [WARN] [config.yml] playerlist-objective: Missing configuration section "playerlist-objective.disable-condition" of type String, using default value %world%=disabledworld.
+[05:29:36] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.case-sensitive-sorting" of type Boolean, using default value true.
+[05:29:36] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.sorting-types" of type List, using default value [].
+[05:29:36] [Server thread/INFO]: [TAB] [WARN] [config.yml] tablist-name-formatting: Configuration section "tablist-name-formatting" has unknown key "default". Valid keys: [enabled, disable-condition]
+[05:29:36] [Server thread/INFO]: [TAB] [WARN] [config.yml] tablist-name-formatting: Missing configuration section "tablist-name-formatting.disable-condition" of type String, using default value %world%=disabledworld.
+[05:29:36] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.enable-collision" of type Object, using default value true.
+[05:29:36] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.invisible-nametags" of type Boolean, using default value false.
+[05:29:36] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.can-see-friendly-invisibles" of type Boolean, using default value false.
+[05:29:36] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.disable-condition" of type String, using default value %world%=disabledworld.
+[05:29:36] [Server thread/INFO]: [TAB] [WARN] [animations.yml] .welcome: Configuration section ".welcome.change-interval" is expected to be of type Integer, but was String
+[05:29:36] [Server thread/INFO]: [TAB] [WARN] [animations.yml] .welcome: Animation "welcome" does not define change-interval! Did you forget to configure it? Using 1000.
+[05:29:36] [Server thread/INFO]: [TAB] [WARN] [animations.yml] .server-name: Configuration section ".server-name.change-interval" is expected to be of type Integer, but was String
+[05:29:36] [Server thread/INFO]: [TAB] [WARN] [animations.yml] .server-name: Animation "server-name" does not define change-interval! Did you forget to configure it? Using 1000.
+[05:29:36] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "default" defined for group "groups". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix, header, footer]
+[05:29:36] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "vip" defined for group "groups". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix, header, footer]
+[05:29:36] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "admin" defined for group "groups". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix, header, footer]
+[05:29:36] [Server thread/INFO]: [TAB] [WARN] [users.yml] Unknown property "Notch" defined for user "users". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix, header, footer]
+[05:29:36] [Server thread/INFO]: [TAB] [WARN] [users.yml] Unknown property "Steve" defined for user "users". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix, header, footer]
+[05:29:36] [Server thread/INFO]: [TAB] [WARN] Playerlist objective value is configured to show "%ping%ms", but returned "166ms" for player futira, which cannot be evaluated to a number.
+[05:29:36] [Server thread/INFO]: [TAB] [WARN] Found a total of 28 issues.
+[05:29:36] [Server thread/INFO]: [TAB] Enabled in 7ms
+[05:29:37] [Server thread/INFO]: futira issued server command: /tab reload
+[05:29:37] [Server thread/INFO]: [TAB] Disabled in 1ms
+[05:29:37] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholder-refresh-intervals: Missing configuration section "placeholder-refresh-intervals.default-refresh-interval" of type Integer, using default value 500.
+[05:29:37] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholders: Missing configuration section "placeholders.date-format" of type String, using default value dd.MM.yyyy.
+[05:29:37] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholders: Missing configuration section "placeholders.time-format" of type String, using default value [HH:mm:ss / h:mm a].
+[05:29:37] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholders: Missing configuration section "placeholders.time-offset" of type Number, using default value 0.
+[05:29:37] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholders: Missing configuration section "placeholders.register-tab-expansion" of type Boolean, using default value false.
+[05:29:37] [Server thread/INFO]: [TAB] [WARN] [config.yml] belowname-objective: Missing configuration section "belowname-objective.disable-condition" of type String, using default value %world%=disabledworld.
+[05:29:37] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer: Missing configuration section "header-footer.header" of type List, using default value [].
+[05:29:37] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer: Missing configuration section "header-footer.footer" of type List, using default value [].
+[05:29:37] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer: Missing configuration section "header-footer.disable-condition" of type String, using default value %world%=disabledworld.
+[05:29:37] [Server thread/INFO]: [TAB] [WARN] [config.yml] playerlist-objective: "value" is set to "%ping%ms", but this will never evaluate to a number. If you want text without limits, update to 1.20.3+ and use fancy-value. If you already did, set "value" to 0 as it is not displayed anyway.
+[05:29:37] [Server thread/INFO]: [TAB] [WARN] [config.yml] playerlist-objective: Missing configuration section "playerlist-objective.disable-condition" of type String, using default value %world%=disabledworld.
+[05:29:37] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.case-sensitive-sorting" of type Boolean, using default value true.
+[05:29:37] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.sorting-types" of type List, using default value [].
+[05:29:37] [Server thread/INFO]: [TAB] [WARN] [config.yml] tablist-name-formatting: Configuration section "tablist-name-formatting" has unknown key "default". Valid keys: [enabled, disable-condition]
+[05:29:37] [Server thread/INFO]: [TAB] [WARN] [config.yml] tablist-name-formatting: Missing configuration section "tablist-name-formatting.disable-condition" of type String, using default value %world%=disabledworld.
+[05:29:37] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.enable-collision" of type Object, using default value true.
+[05:29:37] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.invisible-nametags" of type Boolean, using default value false.
+[05:29:37] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.can-see-friendly-invisibles" of type Boolean, using default value false.
+[05:29:37] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.disable-condition" of type String, using default value %world%=disabledworld.
+[05:29:37] [Server thread/INFO]: [TAB] [WARN] [animations.yml] .welcome: Configuration section ".welcome.change-interval" is expected to be of type Integer, but was String
+[05:29:37] [Server thread/INFO]: [TAB] [WARN] [animations.yml] .welcome: Animation "welcome" does not define change-interval! Did you forget to configure it? Using 1000.
+[05:29:37] [Server thread/INFO]: [TAB] [WARN] [animations.yml] .server-name: Configuration section ".server-name.change-interval" is expected to be of type Integer, but was String
+[05:29:37] [Server thread/INFO]: [TAB] [WARN] [animations.yml] .server-name: Animation "server-name" does not define change-interval! Did you forget to configure it? Using 1000.
+[05:29:37] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "default" defined for group "groups". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix, header, footer]
+[05:29:37] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "vip" defined for group "groups". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix, header, footer]
+[05:29:37] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "admin" defined for group "groups". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix, header, footer]
+[05:29:37] [Server thread/INFO]: [TAB] [WARN] [users.yml] Unknown property "Notch" defined for user "users". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix, header, footer]
+[05:29:37] [Server thread/INFO]: [TAB] [WARN] [users.yml] Unknown property "Steve" defined for user "users". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix, header, footer]
+[05:29:37] [Server thread/INFO]: [TAB] [WARN] Playerlist objective value is configured to show "%ping%ms", but returned "166ms" for player futira, which cannot be evaluated to a number.
+[05:29:37] [Server thread/INFO]: [TAB] [WARN] Found a total of 28 issues.
+[05:29:37] [Server thread/INFO]: [TAB] Enabled in 6ms
+[05:29:43] [Server thread/INFO]: futira issued server command: /plugins
+[05:29:54] [Server thread/INFO]: futira issued server command: /spectator
+[05:30:02] [Server thread/INFO]: futira issued server command: /spectator creative
+[05:30:06] [Server thread/INFO]: futira issued server command: /spectator
+[05:30:07] [Server thread/INFO]: futira issued server command: /spectator:spec
+[05:30:09] [Server thread/INFO]: futira issued server command: /spectator:spec
+[05:30:24] [Server thread/INFO]: futira issued server command: /simplelevelsplugin:reloadconfigsl
+[05:30:32] [Server thread/INFO]: futira issued server command: /ip
+[05:30:38] [Server thread/ERROR]: Could not pass event InventoryClickEvent to IP v5.3.1
+java.lang.ExceptionInInitializerError: null
+	at IP-5.3.1.jar/dev.efnilite.ip.lib.vilib.fastboard.FastBoardBase.<clinit>(FastBoardBase.java:197) ~[IP-5.3.1.jar:?]
+	at IP-5.3.1.jar/dev.efnilite.ip.player.ParkourUser.<init>(ParkourUser.java:233) ~[IP-5.3.1.jar:?]
+	at IP-5.3.1.jar/dev.efnilite.ip.player.ParkourPlayer.<init>(ParkourPlayer.java:81) ~[IP-5.3.1.jar:?]
+	at IP-5.3.1.jar/dev.efnilite.ip.player.ParkourUser.register(ParkourUser.java:66) ~[IP-5.3.1.jar:?]
+	at IP-5.3.1.jar/dev.efnilite.ip.session.Session.create(Session.java:89) ~[IP-5.3.1.jar:?]
+	at IP-5.3.1.jar/dev.efnilite.ip.mode.DefaultMode.create(DefaultMode.java:53) ~[IP-5.3.1.jar:?]
+	at IP-5.3.1.jar/dev.efnilite.ip.menu.play.SingleMenu.open(SingleMenu.java:55) ~[IP-5.3.1.jar:?]
+	at IP-5.3.1.jar/dev.efnilite.ip.menu.play.PlayMenu.lambda$new$0(PlayMenu.java:18) ~[IP-5.3.1.jar:?]
+	at IP-5.3.1.jar/dev.efnilite.ip.lib.vilib.inventory.item.MenuItem.handleClick(MenuItem.java:51) ~[IP-5.3.1.jar:?]
+	at IP-5.3.1.jar/dev.efnilite.ip.lib.vilib.inventory.Menu.click(Menu.java:286) ~[IP-5.3.1.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.21.8-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:71) ~[paper-api-1.21.8-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperEventManager.callEvent(PaperEventManager.java:54) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.callEvent(PaperPluginManagerImpl.java:131) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:628) ~[paper-api-1.21.8-R0.1-SNAPSHOT.jar:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleContainerClick(ServerGamePacketListenerImpl.java:3207) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:59) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:14) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$0(PacketUtils.java:29) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:155) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1449) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:176) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:129) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1429) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1423) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:139) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.managedBlock(MinecraftServer.java:1380) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1388) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1265) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:310) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.ClassNotFoundException: net.minecraft.server.ScoreboardServer$Action
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:205) ~[paper-api-1.21.8-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:172) ~[paper-api-1.21.8-R0.1-SNAPSHOT.jar:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	at java.base/java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.base/java.lang.Class.forName(Class.java:534) ~[?:?]
+	at java.base/java.lang.Class.forName(Class.java:513) ~[?:?]
+	at io.papermc.reflectionrewriter.runtime.AbstractDefaultRulesReflectionProxy.forName(AbstractDefaultRulesReflectionProxy.java:68) ~[reflection-rewriter-runtime-0.0.3.jar:?]
+	at io.papermc.paper.pluginremap.reflect.PaperReflectionHolder.forName(Unknown Source) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at IP-5.3.1.jar/dev.efnilite.ip.lib.vilib.fastboard.FastReflection.nmsClass(FastReflection.java:70) ~[IP-5.3.1.jar:?]
+	at IP-5.3.1.jar/dev.efnilite.ip.lib.vilib.fastboard.FastBoardBase.<clinit>(FastBoardBase.java:185) ~[IP-5.3.1.jar:?]
+	... 32 more
+[05:30:45] [Server thread/INFO]: futira issued server command: /ip
+[05:30:50] [Server thread/INFO]: futira issued server command: /ip
+[05:30:57] [Server thread/INFO]: futira issued server command: /ip
+[05:31:00] [Server thread/ERROR]: Could not pass event InventoryClickEvent to IP v5.3.1
+java.lang.NoClassDefFoundError: Could not initialize class dev.efnilite.ip.lib.vilib.fastboard.FastBoard
+	at IP-5.3.1.jar/dev.efnilite.ip.player.ParkourUser.<init>(ParkourUser.java:233) ~[IP-5.3.1.jar:?]
+	at IP-5.3.1.jar/dev.efnilite.ip.player.ParkourPlayer.<init>(ParkourPlayer.java:81) ~[IP-5.3.1.jar:?]
+	at IP-5.3.1.jar/dev.efnilite.ip.player.ParkourUser.register(ParkourUser.java:66) ~[IP-5.3.1.jar:?]
+	at IP-5.3.1.jar/dev.efnilite.ip.session.Session.create(Session.java:89) ~[IP-5.3.1.jar:?]
+	at IP-5.3.1.jar/dev.efnilite.ip.mode.DefaultMode.create(DefaultMode.java:53) ~[IP-5.3.1.jar:?]
+	at IP-5.3.1.jar/dev.efnilite.ip.menu.play.SingleMenu.open(SingleMenu.java:55) ~[IP-5.3.1.jar:?]
+	at IP-5.3.1.jar/dev.efnilite.ip.menu.play.PlayMenu.lambda$new$0(PlayMenu.java:18) ~[IP-5.3.1.jar:?]
+	at IP-5.3.1.jar/dev.efnilite.ip.lib.vilib.inventory.item.MenuItem.handleClick(MenuItem.java:51) ~[IP-5.3.1.jar:?]
+	at IP-5.3.1.jar/dev.efnilite.ip.lib.vilib.inventory.Menu.click(Menu.java:286) ~[IP-5.3.1.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.21.8-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:71) ~[paper-api-1.21.8-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperEventManager.callEvent(PaperEventManager.java:54) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.callEvent(PaperPluginManagerImpl.java:131) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:628) ~[paper-api-1.21.8-R0.1-SNAPSHOT.jar:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleContainerClick(ServerGamePacketListenerImpl.java:3207) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:59) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:14) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$0(PacketUtils.java:29) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:155) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1449) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:176) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:129) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1429) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1423) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:139) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.managedBlock(MinecraftServer.java:1380) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1388) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1265) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:310) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.ExceptionInInitializerError [in thread "Server thread"]
+	at IP-5.3.1.jar/dev.efnilite.ip.lib.vilib.fastboard.FastBoardBase.<clinit>(FastBoardBase.java:197) ~[IP-5.3.1.jar:?]
+	... 32 more
+[05:31:09] [Server thread/INFO]: futira issued server command: /ip menu
+[05:31:17] [Server thread/INFO]: futira issued server command: /ip:parkour
+[05:31:24] [Server thread/INFO]: futira lost connection: Disconnected
+[05:31:24] [Server thread/INFO]: (Staff) futira has quit the game
+[05:31:24] [Server thread/INFO]: [-] futira
+[05:31:30] [Server thread/INFO]: [UltimateShop] Auto saving data...
+[05:31:30] [Server thread/INFO]: [UltimateShop] If this lead to server TPS drop, you should consider disable auto save feature at config.yml!
