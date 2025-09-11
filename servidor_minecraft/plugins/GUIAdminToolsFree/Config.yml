@@ -1,0 +1,71 @@
+#Messages version
+#DO NOT CHANGE IT MANUALLY!
+CfgVersion: 1.4
+
+#Flags are working on whole server without WorldEdit and WorldGuard
+#TRUE - allow
+#FALSE - block
+FLAGS:
+  PLACE_BLOCK: true
+  BREAK_BLOCK: true
+  CHAT: true
+  PVP: true
+  MOB_SPAWN: true
+  DROP_ITEM: true
+  PICKUP_ITEM: true
+
+#TRUE - set '&' as color code for chat messages
+#Permission - 'admintools.colorcode'
+colorCode: true
+
+#FALSE - unregister
+CommandRegistration:
+  cleararrows: true
+  clearchat: true
+  clearinv: true
+  effects: true
+  exp: true
+  fastflags: true
+  fly: true
+  gamemode: true
+  god: true
+  heal: true
+  kickall: true
+  kick: true
+  kill: true
+  mobspawn: true
+  mute: true
+  myeq: true
+  player: true
+  repair: true
+  servermanager: true
+  showinv: true
+  speed: true
+  timeweather: true
+  top: true
+  tp: true
+  tptome: true
+  tppos: true
+  tpw: true
+  workbench: true
+  worldmanager: true
+
+#Ban manager config
+BanManager:
+  #Set default ban reason
+  DefaultReason: 'No reason!'
+  #Save admin nick
+  AdminNick: true
+  #Kick player immediately
+  KickPlayer: true
+  #Ban message
+  #Color code - &
+  #%REASON% - reason variable
+  #%EXPIRES% - expires variable
+  BanMessage:
+    - "&cYou are banned!"
+    - "&cUsername: &f%PLAYER%"
+    - "&cReason: &f%REASON%"
+    - "&cCreated: &f%CREATED%"
+    - "&cExpires: &f%EXPIRES%"
+    - "&cBanned by: &f%BANNER%"

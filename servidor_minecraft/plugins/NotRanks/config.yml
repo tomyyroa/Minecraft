@@ -1,0 +1,94 @@
+# whether the player needs to confirm to rankup
+confirmation: true
+# different commands that people can use instead of the default one
+# a restart is required to load new aliases
+command-aliases:
+  # command name
+  notranks:
+  - rank
+  - ranks
+  notrankup:
+  - rankup
+  notrankinfo:
+  - rankinfo
+  # command arguments
+  arguments:
+    # these are different from the command names in the fact that if you change it, the original will not display
+    prefix: # /rank prefix
+      - prefix
+    reset: # /rank prefix reset
+      - reset
+    help: # /rank help
+      - help
+    set: # /rank set {player} {rank}
+      - set
+    remove: # /rank remove {player}
+      - remove
+    none: # the name of the no rank
+      - none
+    confirm: # /rankup --confirm
+      - --confirm
+
+# this is used with the cost feature
+currency:
+  # Use the specified currency below over Vault if Vault is enabled
+  override-vault: false
+  # accepts a material or a placeholder
+  # if the currency is a material, the plugin will automatically take away the necessary amounts
+  object: DIAMOND
+  # if using a placeholder, add the remove command here
+  # {player} & {amount} or use a placeholder
+  remove-commands:
+  - msg {player} {amount} diamonds have been taken
+  # what you want before/after the currency ex: $ or €
+  prefix: ''
+  suffix: '&b♦'
+# HeadDataBase or Base64
+head:
+  # set this to true if you want to be able to use heads as ranks in the gui
+  enabled: true
+  # What head will the ranks change to when they are completed - HeadDataBase index or Base64
+  completed: 21771
+# what you want to add to the requirement line when it is completed
+requirement-completion:
+  # beginning of line
+  before: '&a&m'
+  # before {req<x>}
+  prefix: ''
+  # after {req<x>}
+  suffix: ''
+  # at the end of the line
+  after: ' &7(&a✓&7)'
+# formatting of large numbers
+number-formatting:
+  # Same as EssentialsX config
+  # For 1.234,50 use de-DE
+  # For 1,234.50 use en-US
+  # For 1'234,50 use fr-ch
+  format-locale: en-US
+  # pattern for currency to be displayed - symbols are only placeholders, if you want to change the symbols, change format-locale
+  pattern: '#,###.##'
+  use-divisions: true
+  # makes the number smaller and adds a suffix ex: 1000 = 1K | 1234 = 1.23K | 5467900 = 5.47M
+  divisions:
+    # the division and suffix
+    '1000': K
+    '1000000': M
+    '1000000000': B
+    '1000000000000': T
+# rank name before player name in chat
+prefix:
+  # whether the prefix feature is enabled
+  enabled: true
+  # whether chat will be modified to show the prefix
+  modify-chat: false
+  # this will overwrite any other plugin that tries to edit the chat message before it
+  # disable to work with other chat formatting, and remove {name} from format
+  overwrite-previous: true
+  # message format
+  # {prefix} for the rank name
+  # {name} for player name - must be used once and only once if overwrite is enabled
+  # placeholders will be parsed
+  format: '&7[{prefix}&7] &f{name} &8: &r'
+  # name of beginning rank
+  no-rank: '&fUnranked'

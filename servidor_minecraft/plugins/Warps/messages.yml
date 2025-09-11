@@ -1,0 +1,115 @@
+NotPlayer: '&cOnly players can do that'
+NoPermissions: '&cYou don''t have permissions'
+Commands:
+  EditHome:
+    Usage: '&cUse &l/edithome <home>'
+    NoHome: '&cYou don''t have that home'
+  Home:
+    Usage: '&cUse &l/home <home>'
+    NoHome: '&cYou don''t have this home'
+    NoHomes: '&cYou don''t have any homes'
+    Cooldown: '&cPlease wait &l%cooldown% &r&cseconds'
+    OngoingTeleportation: '&cOngoing teleportation already'
+  RemoveHome:
+    Usage: '&cUse &l/removehome <home>'
+    NoHome: '&cYou don''t have this home'
+    Successful: '&aHome successfully removed'
+  SetHome:
+    LimitReached: '&cYou can only have &l%limit% &r&chomes'
+    Usage: '&cUse &l/sethome <home>'
+    HomeAlreadyExists: '&eThis home already exists'
+    Successful: '&aHome &l%home% &r&asuccessfully created'
+  TpCancel:
+    Usage: '&cUse &l/tpcancel'
+    NoOngoingTeleportation: '&cNo ongoing teleportation'
+    Successful: '&aTeleportation cancelled'
+  RemoveSpawn:
+    Usage: '&cUse &l/removespawn'
+    Successful: '&aSpawn successfully removed'
+  SetSpawn:
+    Usage: '&cUse &l/setspawn'
+    Successful: '&aSpawn successfully created'
+  Spawn:
+    Usage: '&cUse &l/setspawn'
+    NoSpawn: '&cSpawn doesn''t exist'
+    OngoingTeleportation: '&cOngoing teleportation already'
+    Cooldown: '&cPlease wait &l%cooldown% &r&cseconds'
+  EditWarp:
+    Usage: '&cUse &l/editwarp <warp>'
+    NoWarp: '&cThis warp doesn''t exist'
+  RemoveWarp:
+    Usage: '&cUse &l/removewarp <warp>'
+    NoWarp: '&cThis warp doesn''t exist'
+    Successful: '&aWarp successfully removed'
+  SetWarp:
+    Usage: '&cUse &l/setwarp <warp>'
+    WarpAlreadyExists: '&eThis warp already exist'
+    Successful: '&aWarp successfully created'
+  Warp:
+    Usage: '&cUse &l/warp'
+    NoWarps: '&cNo warps exist'
+    NoWarp: '&cThis warp doesn''t exist'
+    OngoingTeleportation: '&cOngoing teleportation already'
+    Cooldown: '&cPlease wait &l%cooldown% &r&cseconds'
+  WarpsReload:
+    Usage: '&cUse &l/warpsreload'
+    Successful: '&9&l[Warps] &r&aConfig files successfully reloaded'
+Teleportation:
+  Countdown: '&5Teleporting in &l%seconds% &r&5seconds'
+  Teleporting: '&5&lTeleporting'
+GUI:
+  Next: '&cNext'
+  Back: '&cBack'
+  Icons:
+    Title: '&f&lIcons &r&8page: &f&l%page%'
+    Search: '&f&lSearch...'
+    SearchText: Search...
+    NoWarp: '&cThis warp doesn''t exist'
+    NoHome: '&cThis home doesn''t exist'
+    IconChanged: '&aIcon successfully changed'
+  EditingWarp:
+    Title: '&f&lEditing warp: &r&8%warp%'
+    ChangeIcon: '&f&lChange icon'
+    Rename: '&f&lRename warp'
+    Remove: '&c&lRemove warp'
+    WarpRemoved: '&aWarp successfully removed'
+    NoWarp: '&cThis warp doesn''t exist'
+    Spaces: '&cName can''t contain spaces'
+    AlreadyNamedThatWay: '&eWarp is already named that way'
+    WarpAlreadyExists: '&cThis warp already exists'
+    WarpRenamed: '&aWarp successfully renamed'
+    NeedsPermissionON: '&a&lNeeds permission ON'
+    NeedsPermissionOFF: '&c&lNeeds permission OFF'
+  EditingHome:
+    Title: '&f&lEditing home: &r&8%home%'
+    ChangeIcon: '&f&lChange icon'
+    Rename: '&f&lRename home'
+    Remove: '&c&lRemove home'
+    HomeRemoved: '&aHome successfully removed'
+    NoHome: '&cThis home doesn''t exist'
+    Spaces: '&cName can''t contain spaces'
+    AlreadyNamedThatWay: '&eHome is already named that way'
+    HomeAlreadyExists: '&cYou already have this home'
+    HomeRenamed: '&aHome successfully renamed'
+  Warps:
+    Title: '&f&lWarps &r&8page: &f&l%page%'
+    OngoingTeleportation: '&cOngoing teleportation already'
+    Cooldown: '&cPlease wait &l%cooldown% &r&cseconds'
+    NeedsPermission: '&4Needs permission'
+    PrivateWarp: '&4&lPRIVATE'
+    WarpLore:
+    - ' '
+    - '&fx: &9&l%x%'
+    - '&fy: &9&l%y%'
+    - '&fz: &9&l%z%'
+    - '&cworld: &l%world%'
+  Homes:
+    Title: '&f&lHomes &r&8page: &f&l%page%'
+    OngoingTeleportation: '&cOngoing teleportation already'
+    Cooldown: '&cPlease wait &l%cooldown% &r&cseconds'
+    HomeLore:
+    - ' '
+    - '&fx: &9&l%x%'
+    - '&fy: &9&l%y%'
+    - '&fz: &9&l%z%'
+    - '&cworld: &l%world%'

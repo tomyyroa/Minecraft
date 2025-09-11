@@ -1,0 +1,308 @@
+entities:
+  allay:
+    money: 0.0
+    name: allay
+  armadillo:
+    money: 0.0
+    name: armadillo
+  armor_stand:
+    money: 0.0
+    name: armor_stand
+  axolotl:
+    money: 0.0
+    name: axolotl
+  bat:
+    money: 0.0
+    name: bat
+  bee:
+    money: 0.0
+    name: bee
+  blaze:
+    money: 0.0
+    name: blaze
+  bogged:
+    money: 0.0
+    name: bogged
+  breeze:
+    money: 0.0
+    name: breeze
+  camel:
+    money: 0.0
+    name: camel
+  cat:
+    money: 0.0
+    name: cat
+  cave_spider:
+    money: 0.0
+    name: cave_spider
+  chicken:
+    money: 0.0
+    name: chicken
+  cod:
+    money: 0.0
+    name: cod
+  cow:
+    money: 0.0
+    name: cow
+  creaking:
+    money: 0.0
+    name: creaking
+  creeper:
+    money: 0.0
+    name: creeper
+  dolphin:
+    money: 0.0
+    name: dolphin
+  donkey:
+    money: 0.0
+    name: donkey
+  drowned:
+    money: 0.0
+    name: drowned
+  elder_guardian:
+    money: 0.0
+    name: elder_guardian
+  ender_dragon:
+    money: 0.0
+    name: ender_dragon
+  enderman:
+    money: 0.0
+    name: enderman
+  endermite:
+    money: 0.0
+    name: endermite
+  evoker:
+    money: 0.0
+    name: evoker
+  fox:
+    money: 0.0
+    name: fox
+  frog:
+    money: 0.0
+    name: frog
+  ghast:
+    money: 0.0
+    name: ghast
+  giant:
+    money: 0.0
+    name: giant
+  glow_squid:
+    money: 0.0
+    name: glow_squid
+  goat:
+    money: 0.0
+    name: goat
+  guardian:
+    money: 0.0
+    name: guardian
+  happy_ghast:
+    money: 0.0
+    name: happy_ghast
+  hoglin:
+    money: 0.0
+    name: hoglin
+  horse:
+    money: 0.0
+    name: horse
+  husk:
+    money: 0.0
+    name: husk
+  illusioner:
+    money: 0.0
+    name: illusioner
+  iron_golem:
+    money: 0.0
+    name: iron_golem
+  llama:
+    money: 0.0
+    name: llama
+  magma_cube:
+    money: 0.0
+    name: magma_cube
+  mooshroom:
+    money: 0.0
+    name: mooshroom
+  mule:
+    money: 0.0
+    name: mule
+  ocelot:
+    money: 0.0
+    name: ocelot
+  panda:
+    money: 0.0
+    name: panda
+  parrot:
+    money: 0.0
+    name: parrot
+  phantom:
+    money: 0.0
+    name: phantom
+  pig:
+    money: 0.0
+    name: pig
+  piglin:
+    money: 0.0
+    name: piglin
+  piglin_brute:
+    money: 0.0
+    name: piglin_brute
+  pillager:
+    money: 0.0
+    name: pillager
+  player:
+    withdrawMoney: true
+    affectMultiplier: false
+    money: 0.0
+    name: player
+  polar_bear:
+    money: 0.0
+    name: polar_bear
+  pufferfish:
+    money: 0.0
+    name: pufferfish
+  rabbit:
+    money: 0.0
+    name: rabbit
+  ravager:
+    money: 0.0
+    name: ravager
+  salmon:
+    money: 0.0
+    name: salmon
+  sheep:
+    money: 0.0
+    name: sheep
+  shulker:
+    money: 0.0
+    name: shulker
+  silverfish:
+    money: 0.0
+    name: silverfish
+  skeleton:
+    money: 0.0
+    name: skeleton
+  skeleton_horse:
+    money: 0.0
+    name: skeleton_horse
+  slime:
+    money: 0.0
+    name: slime
+  sniffer:
+    money: 0.0
+    name: sniffer
+  snow_golem:
+    money: 0.0
+    name: snow_golem
+  spider:
+    money: 0.0
+    name: spider
+  squid:
+    money: 0.0
+    name: squid
+  stray:
+    money: 0.0
+    name: stray
+  strider:
+    money: 0.0
+    name: strider
+  tadpole:
+    money: 0.0
+    name: tadpole
+  trader_llama:
+    money: 0.0
+    name: trader_llama
+  tropical_fish:
+    money: 0.0
+    name: tropical_fish
+  turtle:
+    money: 0.0
+    name: turtle
+  vex:
+    money: 0.0
+    name: vex
+  villager:
+    money: 0.0
+    name: villager
+  vindicator:
+    money: 0.0
+    name: vindicator
+  wandering_trader:
+    money: 0.0
+    name: wandering_trader
+  warden:
+    money: 0.0
+    name: warden
+  witch:
+    money: 0.0
+    name: witch
+  wither:
+    money: 0.0
+    name: wither
+  wither_skeleton:
+    money: 0.0
+    name: wither_skeleton
+  wolf:
+    money: 0.0
+    name: wolf
+  zoglin:
+    money: 0.0
+    name: zoglin
+  zombie:
+    money: 0.0
+    name: zombie
+  zombie_horse:
+    money: 0.0
+    name: zombie_horse
+  zombie_villager:
+    money: 0.0
+    name: zombie_villager
+  zombified_piglin:
+    money: 0.0
+    name: zombified_piglin
+general:
+  payEntitiesSpawnedBy:
+    natural: true
+    jockey: true
+    chunk_gen: true
+    spawner: true
+    trial_spawner: true
+    egg: true
+    spawner_egg: true
+    lightning: true
+    build_snowman: true
+    build_irongolem: true
+    build_wither: true
+    village_defense: true
+    village_invasion: true
+    breeding: true
+    slime_split: true
+    reinforcements: true
+    nether_portal: true
+    dispense_egg: true
+    infection: true
+    cured: true
+    ocelot_baby: true
+    silverfish_block: true
+    mount: true
+    trap: true
+    ender_pearl: true
+    shoulder_entity: true
+    drowned: true
+    sheared: true
+    explosion: true
+    raid: true
+    patrol: true
+    beehive: true
+    piglin_zombified: true
+    spell: true
+    frozen: true
+    metamorphosis: true
+    duplication: true
+    command: true
+    enchantment: true
+    ominous_item_spawner: true
+    bucket: true
+    potion_effect: true
+    rehydration: true
+    custom: true
+    default: true

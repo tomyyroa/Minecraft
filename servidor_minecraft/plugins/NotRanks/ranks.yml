@@ -1,0 +1,395 @@
+# gui that opens with no path specified
+default:
+  auto-rankup: false
+  # The name of the configuration section is what players can use in commands
+  Starter:
+    # This is used in the GUI
+    name: '&9&lStarter'
+    # This is used with the prefix feature or the %notranks_prefix% placeholder
+    # You can remove this option, and the default prefix will be the rank name.
+    prefix: '&7[&9&lStarter&7]'
+    # If HeadDataBase is installed, this will try and get a head ID, otherwise Base64
+    head: 193
+    # this item will be used if heads is disabled
+    item: LIME_CONCRETE
+    # {cost} to get x/total - with prefix & suffix around each number
+    # {req1} to get the first requirement x/total ({req2} {req3} etc.)
+    # lore will change from red to green after completion if there is ^^ included
+    lore:
+      - '&e<△> &c&lREQUIREMENTS &e<△>'
+      - '&7￫ &fPrice: {cost}'
+      - '&7￫ &fHours Played: {req3}'
+      - '&7￫ &fMob Kills: {req1}'
+      - '&7￫ &fStone Broken: {req2}'
+      - '&e<△> &c&lREWARDS &e<△>'
+      - '&7￫ &9&lStarter &ftitle.'
+    # add custom model data to the rank item for a resource pack
+    custom-model-data: 123
+    # this will change the lore and item when the rank is completed
+    # this could be useful if you want to unlock lore or add a secret message
+    completion-lore:
+      enabled: false
+      # this will override the completed head
+      head: 21771
+      item: EMERALD_BLOCK
+      lore:
+        - '&7<&m                      &7>'
+        - '&a&l&nRank Completed'
+        - '&7<&m                      &7>'
+      custom-model-data: 123
+    # this will change the lore and item if the player cannot rankup to the rank
+    not-on-rank:
+      enabled: false
+      head: 69288
+      item: SCULK
+      lore:
+        - '&7<&m                      &7>'
+        - '&cYou do not have access'
+        - '&cto this rank yet'
+        - '&7<&m                      &7>'
+      custom-model-data: 123
+    hide-nbt: true
+    requirements:
+      #                        vv operator - can be "<=" ">=" "!=" "=" ">" "<" ||| true/false & text can only use "!=" & "="
+      # papi placeholder vv    vv  vv required amount - Make sure you download the placeholder before you use it
+      - '%statistic_mob_kills% >= 100'
+      #- '%mcmmo_power_level% >= 5'
+      - '%statistic_mine_block:STONE% >= 500'
+      # playtime
+      - '%statistic_hours_played% >= 1'
+      # kill 3 MythicMobs SkeletalKnights
+      #- '%notregionkills_mob_SkeletalKnight% >= 3'
+    # auto checks and takes away with options defined in currency
+    cost: 3
+    commands:
+      # use {player} to replace it with the players name
+      # does not need a '/' in front of the command
+      - 'broadcast &e&lCongrats to &a{player} &e&lfor ranking up to &9&lStarter'
+      #- 'lp user {player} promote playerranks'
+    # These commands are run for each completed requirement
+    requirement-commands:
+      # requirement number in the order they are displayed in the requirements section
+      1:
+        - '[message_player] &6You''ve defeated 100 mobs.'
+      2:
+        - '[message_player] &6You''ve mined 500 stone. As your reward, have 500 more.'
+        - 'minecraft:give {player} stone 500'
+example-path:
+  auto-rankup: false
+  Wanderer:
+    name: '&8&lWanderer'
+    head: 193
+    item: STONE
+    lore:
+      - '&e<△> &c&lREWARDS &e<△>'
+      - '&7￫ &fPrefix: &7[&8&lWanderer&7] '
+      - '&e<△> &c&lREQUIREMENTS &e<△>'
+      - '&7￫ &fPrice: {cost}'
+      - '&7￫ &fPlaytime: {req1}'
+      - '&7￫ &fMob Kills: {req2}'
+      - '&7￫ &fStone Broken: {req3}'
+    requirements:
+      - '%statistic_hours_played% >= 1'
+      - '%statistic_mob_kills% >= 100'
+      - '%statistic_mine_block:STONE% >= 500'
+    cost: 5
+    hide-nbt: true
+    completion-lore:
+      enabled: true
+      head: 74737
+      item: SMOOTH_STONE
+      lore:
+        - '&7<&m                      &7>'
+        - '&a&l&nRank Completed'
+        - '&2&oCongratulations on'
+        - '&2&oyour first rank!'
+        - '&7<&m                      &7>'
+    not-on-rank:
+      enabled: false
+      lore:
+        - 'doesn''t matter because this is the first rank'
+    commands:
+      - 'broadcast &e&lCongrats to &a{player} &e&lfor ranking up to &8&lWanderer'
+  Citizen:
+    name: '&a&lCitizen'
+    head: 194
+    item: BRICKS
+    lore:
+      - '&e<△> &c&lREWARDS &e<△>'
+      - '&7￫ &fPrefix: &7[&a&lCitizen&7] '
+      - '&e<△> &c&lREQUIREMENTS &e<△>'
+      - '&7￫ &fPrice: {cost}'
+      - '&7￫ &fPlaytime: {req1}'
+      - '&7￫ &fAnimals Bred: {req2}'
+      - '&7￫ &fSkeletons Killed: {req3}'
+    requirements:
+      - '%statistic_hours_played% >= 3'
+      - '%statistic_animals_bred% >= 10'
+      - '%statistic_kill_entity:SKELETON% >= 25'
+    cost: 15
+    hide-nbt: true
+    completion-lore:
+      enabled: true
+      head: 74738
+      item: QUARTZ_BRICKS
+      lore:
+        - '&7<&m                      &7>'
+        - '&a&l&nRank Completed'
+        - '&2&oDid you know?'
+        - '&2&oThere is a 1% chance'
+        - '&2&ofor a spider jockey'
+        - '&2&oto spawn'
+        - '&7<&m                      &7>'
+    not-on-rank:
+      enabled: true
+      head: 44101
+      item: SCULK_VEIN
+      lore:
+        - '&7<&m                      &7>'
+        - '&cYou do not have access'
+        - '&cto this rank yet'
+        - '&7<&m                      &7>'
+    commands:
+      - 'broadcast &e&lCongrats to &a{player} &e&lfor ranking up to &a&lCitizen'
+  Apprentice:
+    name: '&2&lApprentice'
+    head: 195
+    item: ANVIL
+    lore:
+      - '&e<△> &c&lREWARDS &e<△>'
+      - '&7￫ &fPrefix: &7[&2&lApprentice&7] '
+      - '&e<△> &c&lREQUIREMENTS &e<△>'
+      - '&7￫ &fPrice: {cost}'
+      - '&7￫ &fPlaytime: {req1}'
+      - '&7￫ &fChests Opened: {req2}'
+      - '&7￫ &fDistance Climbed (cm): {req3}'
+    requirements:
+      - '%statistic_hours_played% >= 8'
+      - '%statistic_chest_opened% >= 100'
+      - '%statistic_climb_one_cm% >= 1000'
+    cost: 30
+    hide-nbt: true
+    completion-lore:
+      enabled: true
+      head: 74739
+      item: SMITHING_TABLE
+      lore:
+        - '&7<&m                      &7>'
+        - '&a&l&nRank Completed'
+        - '&2&oTip: You do not get'
+        - '&2&oslowed down while'
+        - '&2&oeating and climbing'
+        - '&7<&m                      &7>'
+    not-on-rank:
+      enabled: true
+      head: 44101
+      item: SCULK_VEIN
+      lore:
+        - '&7<&m                      &7>'
+        - '&cYou do not have access'
+        - '&cto this rank yet'
+        - '&7<&m                      &7>'
+    commands:
+      - 'broadcast &e&lCongrats to &a{player} &e&lfor ranking up to &2&lApprentice'
+  Merchant:
+    name: '&d&lMerchant'
+    head: 196
+    item: RAW_GOLD
+    lore:
+      - '&e<△> &c&lREWARDS &e<△>'
+      - '&7￫ &fPrefix: &7[&d&lMerchant&7] '
+      - '&e<△> &c&lREQUIREMENTS &e<△>'
+      - '&7￫ &fPrice: {cost}'
+      - '&7￫ &fPlaytime: {req1}'
+      - '&7￫ &fDamage Dealt: {req2}'
+      - '&7￫ &fGuardians Killed: {req3}'
+    requirements:
+      - '%statistic_hours_played% >= 16'
+      - '%statistic_damage_dealt% >= 1000'
+      - '%statistic_kill_entity:GUARDIAN% >= 500'
+    cost: 64
+    hide-nbt: true
+    completion-lore:
+      enabled: true
+      head: 74740
+      item: GOLD_BLOCK
+      lore:
+        - '&7<&m                      &7>'
+        - '&a&l&nRank Completed'
+        - '&2&oDid you know?'
+        - '&2&oSquids are'
+        - '&2&oGuardians'' archenemy'
+        - '&7<&m                      &7>'
+    not-on-rank:
+      enabled: true
+      head: 44101
+      item: SCULK_VEIN
+      lore:
+        - '&7<&m                      &7>'
+        - '&cYou do not have access'
+        - '&cto this rank yet'
+        - '&7<&m                      &7>'
+    commands:
+      - 'broadcast &e&lCongrats to &a{player} &e&lfor ranking up to &d&lMerchant'
+  Master:
+    name: '&6&lMaster'
+    head: 197
+    item: DIAMOND_SWORD
+    lore:
+      - '&e<△> &c&lREWARDS &e<△>'
+      - '&7￫ &fPrefix: &7[&6&lMaster&7] '
+      - '&e<△> &c&lREQUIREMENTS &e<△>'
+      - '&7￫ &fPrice: {cost}'
+      - '&7￫ &fPlaytime: {req1}'
+      - '&7￫ &fFish Caught: {req2}'
+      - '&7￫ &fPig Travel (cm): {req3}'
+    requirements:
+      - '%statistic_hours_played% >= 30'
+      - '%statistic_fish_caught% >= 50'
+      - '%statistic_pig_one_cm% >= 1000'
+    cost: 72
+    hide-nbt: true
+    completion-lore:
+      enabled: true
+      head: 74741
+      item: TRIDENT
+      lore:
+        - '&7<&m                      &7>'
+        - '&a&l&nRank Completed'
+        - '&2&oYou''ll complete this'
+        - '&2&o rank path when'
+        - '&2&opigs fly'
+        - '&7<&m                      &7>'
+    not-on-rank:
+      enabled: true
+      head: 44101
+      item: SCULK_VEIN
+      lore:
+        - '&7<&m                      &7>'
+        - '&cYou do not have access'
+        - '&cto this rank yet'
+        - '&7<&m                      &7>'
+    commands:
+      - 'broadcast &e&lCongrats to &a{player} &e&lfor ranking up to &6&lMaster'
+  Elder:
+    name: '&e&lElder'
+    head: 198
+    item: EXPERIENCE_BOTTLE
+    lore:
+      - '&e<△> &c&lREWARDS &e<△>'
+      - '&7￫ &fPrefix: &7[&e&lElder&7] '
+      - '&e<△> &c&lREQUIREMENTS &e<△>'
+      - '&7￫ &fPrice: {cost}'
+      - '&7￫ &fPlaytime: {req1}'
+      - '&7￫ &fNights Slept: {req2}'
+      - '&7￫ &fWithers Killed: {req3}'
+    requirements:
+      - '%statistic_hours_played% >= 50'
+      - '%statistic_sleep_in_bed% >= 50'
+      - '%statistic_kill_entity:WITHER% >= 1'
+    cost: 128
+    hide-nbt: true
+    completion-lore:
+      enabled: true
+      head: 74742
+      item: ENCHANTING_TABLE
+      lore:
+        - '&7<&m                      &7>'
+        - '&a&l&nRank Completed'
+        - '&2&oDid you know?'
+        - '&2&oWithers can'
+        - '&2&obreak obsidian'
+        - '&7<&m                      &7>'
+    not-on-rank:
+      enabled: true
+      head: 44101
+      item: SCULK_VEIN
+      lore:
+        - '&7<&m                      &7>'
+        - '&cYou do not have access'
+        - '&cto this rank yet'
+        - '&7<&m                      &7>'
+    commands:
+      - 'broadcast &e&lCongrats to &a{player} &e&lfor ranking up to &e&lElder'
+  Chief:
+    name: '&4&lChief'
+    head: 199
+    item: BELL
+    lore:
+      - '&e<△> &c&lREWARDS &e<△>'
+      - '&7￫ &fPrefix: &7[&4&lChief&7] '
+      - '&e<△> &c&lREQUIREMENTS &e<△>'
+      - '&7￫ &fPrice: {cost}'
+      - '&7￫ &fPlaytime: {req1}'
+      - '&7￫ &fVillager Trades: {req2}'
+      - '&7￫ &fBeacons Crafted: {req3}'
+      - '&7￫ &fCauldrons Filled: {req4}'
+    requirements:
+      - '%statistic_hours_played% >= 60'
+      - '%statistic_traded_with_villager% >= 30'
+      - '%statistic_craft_item:BEACON% >= 1'
+      - '%statistic_cauldron_filled% >= 5'
+    cost: 200
+    hide-nbt: true
+    completion-lore:
+      enabled: true
+      head: 74743
+      item: LECTERN
+      lore:
+        - '&7<&m                      &7>'
+        - '&a&l&nRank Completed'
+        - '&2&oTip: It takes 164'
+        - '&2&oblocks to construct'
+        - '&2&oa max level beacon'
+        - '&7<&m                      &7>'
+    not-on-rank:
+      enabled: true
+      head: 44101
+      item: SCULK_VEIN
+      lore:
+        - '&7<&m                      &7>'
+        - '&cYou do not have access'
+        - '&cto this rank yet'
+        - '&7<&m                      &7>'
+    commands:
+      - 'broadcast &e&lCongrats to &a{player} &e&lfor ranking up to &4&lChief'
+  Champion:
+    name: '&b&lC&3&lh&b&la&3&lm&b&lp&3&li&b&lo&3&ln'
+    head: 200
+    item: NETHERITE_CHESTPLATE
+    lore:
+      - '&e<△> &c&lREWARDS &e<△>'
+      - '&7￫ &fPrefix: &7[&b&lC&3&lh&b&la&3&lm&b&lp&3&li&b&lo&3&ln&7] '
+      - '&e<△> &c&lREQUIREMENTS &e<△>'
+      - '&7￫ &fPrice: {cost}'
+      - '&7￫ &fPlaytime: {req1}'
+      - '&7￫ &fCake Slices Eaten: {req2}'
+      - '&7￫ &fWardens Killed: {req3}'
+      - '&7￫ &fAncient Debris Mined: {req4}'
+    requirements:
+      - '%statistic_hours_played% >= 72'
+      - '%statistic_cake_slices_eaten% >= 13'
+      - '%statistic_kill_entity:WARDEN% >= 1'
+      - '%statistic_mine_block:ANCIENT_DEBRIS% >= 24'
+    cost: 500
+    hide-nbt: true
+    completion-lore:
+      enabled: true
+      head: 74744
+      item: ELYTRA
+      lore:
+        - '&7<&m                      &7>'
+        - '&a&l&nRank Completed'
+        - '&2&oThanks for playing!'
+        - '&7<&m                      &7>'
+    not-on-rank:
+      enabled: true
+      head: 44101
+      item: SCULK_VEIN
+      lore:
+        - '&7<&m                      &7>'
+        - '&cYou do not have access'
+        - '&cto this rank yet'
+        - '&7<&m                      &7>'
+    commands:
+      - 'broadcast &e&lCongrats to &a{player} &e&lfor ranking up to &b&lC&3&lh&b&la&3&lm&b&lp&3&li&b&lo&3&ln'

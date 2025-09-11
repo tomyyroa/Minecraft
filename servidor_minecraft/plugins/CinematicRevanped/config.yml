@@ -1,0 +1,5 @@
+Config:
+  effects:
+  - fade-io
+  music:
+  - block.note_block.cow_bell

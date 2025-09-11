@@ -1,0 +1,38 @@
+# CustomGUI 5 config file.
+# Plugin by snadol, https://www.spigotmc.org/members/snadol.528915/
+# Always try to use single quotes around a config value if it doesn't work before reporting!
+# ==========================================
+
+MessagesPrefix: '[CustomGUI]'
+Messages:
+  NoPermissionMessages:
+    Command: You do not have permission to use the commands!
+    Open: You do not have permission to open the GUI!
+  General:
+    Reloaded: Config Reloaded!
+    UnknownArg: Unknown Argument!
+    NeedArg: This command requires an argument!
+    NoMeetRequirements: You do not meet the requirements to use this item!
+Menus:
+  '1':
+    OpenCommand:
+    - minerals
+    Size: 9
+    CloseAfterClick: false
+    GUITitle: CustomGUI
+    FillWithPanes: false
+    OpenSound: false
+    Items:
+      Item1:
+        Name: Diamond
+        Lore:
+        - A Diamond
+        - Ooh, shiny!
+        Material: DIAMOND
+        Data: 0
+        Amount: 1
+        Command:
+        - minecraft:give @p diamond 1
+        Slot: 0
+        Attributes:
+        - none

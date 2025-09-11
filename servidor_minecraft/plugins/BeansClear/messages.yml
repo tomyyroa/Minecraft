@@ -1,0 +1,7 @@
+prefix: "&7[&6BeansClear&7]"
+
+reload: "&aPlugin successfully reloaded"
+no-perm: "&cYou do not have permission for this"
+unknown: "&cThis subcommand %command% does not exist or an error occurred."
+deny-place-block: "&cYou cannot place %block% in this region."
+deny-break-block: "&cYou cannot break %block% in this region."

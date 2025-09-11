@@ -1,0 +1,30 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.214.184.169
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1757560843123
+  login: 1757567186249
+money: '476000.0'
+last-account-name: futira
+logoutlocation:
+  world: f200f184-05c7-47e1-9e0a-5ee68ca13f99
+  world-name: world
+  x: 182.55458658900395
+  y: 107.0
+  z: -27.428058129202036
+  yaw: -78.53626251220703
+  pitch: 25.152568817138672

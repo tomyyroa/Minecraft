@@ -1,0 +1,8 @@
+{
+  "ranks": [],
+  "rankCostMultiplierPerRank": 0.0,
+  "name": "default",
+  "applyRankCostMultiplierToLadder": true,
+  "id": 0,
+  "commands": []
+}

@@ -1,0 +1,5 @@
+max-level: 10
+boss-max-level: 3
+health-boost: 5.0
+damage-boost: 0.8
+block-distance: 35

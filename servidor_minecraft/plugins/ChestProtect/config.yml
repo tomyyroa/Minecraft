@@ -1,0 +1,122 @@
+# ChestProtect Configuration
+
+# Sign protection settings
+signs:
+  # Automatically restore broken/removed protection signs (true/false)
+  auto_restore: true
+  
+  # Prevent editing of protection signs (true/false)
+  prevent_editing: true
+  
+  # Time in ticks before a broken sign is restored (1 tick = 1/20 second)
+  # Default: 5 ticks (1/4 second)
+  restore_delay: 5
+
+# Time in seconds that access requests will remain valid
+request_timeout: 60
+
+# Detection settings
+detection:
+  # Maximum distance to detect chests (blocks)
+  max_distance: 20
+  
+  # Allow detection through any vertical level
+  detect_any_level: true
+  
+  # Vertical sensitivity for cone-shaped detection (higher values = wider cone)
+  # Range: 0.1 to 2.0, default: 0.8
+  vertical_sensitivity: 0.8
+
+# Bedrock/Geyser compatibility settings
+geyser:
+  # Enable enhanced support for Bedrock players (recommended: true)
+  enhanced_support: true
+  
+  # Use more visible title messages for important events
+  use_titles: true
+  
+  # Increase detection range for Bedrock players (they often have difficulty with precise aiming)
+  increased_detection_range: 5
+  
+  # Allow clicking anywhere on a double chest to check ownership
+  # This helps with Bedrock touch controls
+  relaxed_chest_targeting: true
+
+# Command configuration
+commands:
+  # Admin command to reload the plugin config and manage chests
+  admin_command: "chestadmin"
+  admin_aliases: ["cadmin", "chestprotectadmin"]
+
+# Messages configuration
+# Use & for color codes, {0}, {1}, etc. for parameters
+messages:
+  prefix: "&8[&6ChestProtect&8] &r"
+  
+  # Error messages
+  error:
+    player_only: "This command can only be used by players."
+    no_chest_found: "No chest found! Look at a chest to protect it."
+    already_protected: "This chest is already protected."
+    cant_protect_others: "You cannot protect chests for other players."
+    break_protected_chest: "This chest is protected by &6{0}&r."
+    break_protection_sign: "This sign is protecting a chest owned by &6{0}&r."
+    cant_edit_protection_sign: "You cannot edit a protection sign owned by &6{0}&r."
+    player_offline: "Player &6{0}&r is not online."
+    request_self: "You cannot request access to your own chest."
+    no_protected_chests: "&6{0}&r does not have any protected chests."
+    request_failed: "Failed to create access request. Please try again."
+    request_pending: "You already have a pending request. Wait for a response or try again later."
+    no_pending_request: "&6{0}&r has not requested access to your chests."
+    access_denied: "&6{0}&r has denied your chest access request."
+    chest_not_protected: "This chest is not protected."
+    not_chest_owner: "This chest is owned by &6{0}&r. You cannot unlock it."
+    unlock_failed: "Failed to unlock the chest. Please try again."
+    no_sign_inventory: "You need to have a sign in your inventory to protect a chest."
+    already_protected_by: "This chest is already protected by &6{0}&r."
+    no_permission: "You don't have permission to perform this command."
+    config_reloaded: "Configuration reloaded successfully."
+    unknown_command: "Unknown subcommand. Use /chestadmin help for available commands."
+  
+  # Success messages
+  success:
+    chest_protected: "Chest protected successfully."
+    chest_unlocked: "Chest unlocked successfully."
+    chest_claimed: "Chest claimed successfully."
+    request_sent: "Access request sent to &6{0}&r."
+    request_accepted: "You have granted &6{0}&r temporary access to your chests."
+    request_denied: "You have denied &6{0}&r access to your chests."
+    access_granted: "&6{0}&r has granted you temporary access to their chests."
+    config_reloaded: "ChestProtect configuration reloaded successfully."
+    admin_info: "ChestProtect v1.0.0 by juicyyfruittsnackss - dsc.gg/fruitsnacks"
+  
+  # Help messages
+  help:
+    openrequest: "Usage: /openrequest <player>"
+    acceptrequest: "Usage: /acceptrequest <player>"
+    denyrequest: "Usage: /denyrequest <player>"
+    unlockchest: "Usage: /unlockchest - Look at a chest to unlock it"
+    claimchest: "Usage: /claimchest - Look at a chest to claim it (requires a sign in your inventory)"
+    # Admin command help messages
+    admin:
+      header: "&6========== ChestProtect Admin Commands ==========&r"
+      reload: "&e/chestadmin reload&r - Reload plugin configuration"
+      list: "&e/chestadmin list [player]&r - List all protected chests"
+      info: "&e/chestadmin info&r - Show plugin information"
+      help: "&e/chestadmin help&r - Show this help menu"
+      footer: "&6==============================================&r"
+  
+  # Information messages
+  info:
+    chest_owner: "This chest is owned by &6{0}&r."
+    use_claimchest: "&aHint: &rUse &6/claimchest&r to protect this chest with a sign from your inventory."
+    sign_info: "Right-click signs with a chest to see owner information."
+    sign_restored: "&c{0}&r tried to break your protection sign, but it was automatically restored."
+      
+  # Request messages
+  request:
+    access: "&6{0}&r is requesting access to your chests."
+    chest_protected: "This chest is protected by &6{0}&r."
+    send_request: "Send an access request with &6/openrequest {0}&r"
+    accept_command: "Type &a/acceptrequest {0}&r to accept."
+    deny_command: "Type &c/denyrequest {0}&r to deny."

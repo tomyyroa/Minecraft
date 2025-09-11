@@ -1,0 +1,40 @@
+#
+# ██████╗░███████╗░█████╗░███╗░░██╗░██████╗
+# ██╔══██╗██╔════╝██╔══██╗████╗░██║██╔════╝
+# ██████╦╝█████╗░░███████║██╔██╗██║╚█████╗░
+# ██╔══██╗██╔══╝░░██╔══██║██║╚████║░╚═══██╗
+# ██████╦╝███████╗██║░░██║██║░╚███║██████╔╝
+# ╚═════╝░╚══════╝╚═╝░░╚═╝╚═╝░░╚══╝╚═════╝░
+#
+#https://discord.gg/dxmXP3WWdW
+world-guard:
+  enabled: true #interaction with world guard, true requires the plugin
+
+no-world-guard:
+  enabled-worlds:
+    - "world"
+
+admin-permission: "beansc.admin" #PERMISSION [RELOAD, BLOCK BREAK, AND BLOCK PLACE BYPASS]
+
+all-blocks: #activates that all blocs are eliminated
+  enabled: false
+  time: 5 #IN SECONDS
+
+all-entities: #activates that all entities are eliminated
+  enabled: false
+  time: 5 #IN SECONDS
+
+blocks:
+  OBSIDIAN: 5 #IN SECONDS
+entities:
+  END_CRYSTAL: 5 #IN SECONDS
+fluids:
+  WATER: 5
+  LAVA: 5
+
+# ██╗░░██╗░█████╗░██████╗░██████╗░██╗░░░██╗
+# ██║░░██║██╔══██╗██╔══██╗██╔══██╗╚██╗░██╔╝
+# ███████║███████║██████╔╝██████╔╝░╚████╔╝░
+# ██╔══██║██╔══██║██╔═══╝░██╔═══╝░░░╚██╔╝░░
+# ██║░░██║██║░░██║██║░░░░░██║░░░░░░░░██║░░░
+# ╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░░░░╚═╝░░░░░░░░╚═╝░░░

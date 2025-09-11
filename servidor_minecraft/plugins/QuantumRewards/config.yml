@@ -1,0 +1,14 @@
+Time:
+  reward-delay: 86400 #Tiempo en segundos en el que se desbloquea la siguiente recompensa 86400 = 1 Dia
+  reward-expires: 86400 #Tiempo en segundos en el que expira una recompensa 86400 = 1 Dia
+  notify-interval: 900 #Intervalo de tiempo en el que se notifica al jugador que tiene una recompensa sin reclamar 900 = 15min
+
+rewards:
+  expirable: true #Si se establece en false, las recompensas NO van a expirar
+
+#Listado de comandos con los que se abre el menu de recompensas
+commands:
+  dailyrewards:
+    - dailyrewards
+    - rewards
+    - recompensas

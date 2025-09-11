@@ -1,0 +1,215 @@
+custom-items:
+  fill:
+    # material from https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    # for resource packs. Not required to use this
+    custom-model-data: 10
+    # name and lore accept placeholders and hex
+    # {amount} will be replaced with the value you are sorting by. This changes for different GUIs
+    # this will make the name invisible
+    name: '&r'
+    lore: []
+    enchanted: false
+    hide-nbt: true
+    # this will cause the item to not have anything displayed when hovered over (Minecraft version 1.20.5 and higher)
+    hide-tooltip: true
+    # Commands to run when the item is clicked
+    # use {player} to replace with the player's name
+    # [close] to close GUI
+    # [p] (command) to send as the player
+    # [next] <x> goes to the next x amount of pages or next page if x is empty
+    # [back] <x> goes to the last x amount of pages or last page if x is empty
+    # [gui] (gui name) (page) opens a new gui - only gui name is required, ex: [gui] default | [gui] default 3
+    # adding @{permission} at the beginning will check for a permission before executing the command. !@ will check if they don't have permission
+    #   ex: '@notranks.admin [next]' will only go to the next page if the player clicking the item has notranks.admin
+    #   '!@essentials.fly [p] top' will run the command /top as the player if the player doesn't have essentials.fly
+    # {player} will be replaced with the name of the player who clicked
+    # {slot<x>} will be replaced with the rank path and the rank number
+    commands: []
+  custom-item-example:
+    material: SUNFLOWER
+    amount: 1
+    enchanted: true
+    hide-nbt: true
+    name: '&e&lRank Menu'
+    lore:
+    - ''
+    - '&6Complete requirements to'
+    - '&6unlock special rewards'
+    - ''
+    commands:
+    - '[gui] default 1'
+  exit:
+    material: BARRIER
+    amount: 1
+    name: '&c&lExit'
+    commands:
+    - '[close]'
+  next:
+    material: ARROW
+    amount: 1
+    name: '&7Next Page'
+    commands:
+    - '[next]'
+  back:
+    material: ARROW
+    amount: 1
+    name: '&7Previous Page'
+    commands:
+    - '[back]'
+  confirm:
+    material: LIME_STAINED_GLASS_PANE
+    amount: 1
+    name: '&a&lConfirm'
+    commands:
+    - '[p] notrankup {slot13} --confirm'
+    - '[close]'
+  cancel:
+    material: RED_STAINED_GLASS_PANE
+    amount: 1
+    name: '&c&lCancel'
+    commands:
+    - '[close]'
+  default-prefix:
+    material: DIRT
+    amount: 1
+    name: '&#6b4616Default Path'
+    lore:
+    - ''
+    - '&6&oClick to follow the'
+    - '&6&odefault rank path'
+    - ''
+    commands:
+    - '[p] notranks prefix default'
+    - '[close]'
+  reset-prefix:
+    material: WATER_BUCKET
+    amount: 1
+    name: '&fReset Prefix'
+    lore:
+    - ''
+    - '&7Your prefix will'
+    - '&7match your last rank'
+    - ''
+    commands:
+    - '[p] notranks prefix reset'
+    - '[close]'
+default:
+  # name of the gui that opens when you do /ranks
+  gui-name: '&cRanks'
+  # require permission to open the GUI
+  require-permission: true
+  # whether the page number will be added to the name of the gui
+  add-page: false
+  # this will surround the ranks with fill items and expand the inventory size as new ranks are added
+  auto-size: true
+  # this will replace the next arrow and pack arrows with the fill item unless more pages are available
+  remove-page-items: true
+  # what item will pop up when you are denied in the config
+  # set to DISABLE to send a chat message
+  # set to RANK to only change the item name
+  deny-click-item: STRUCTURE_VOID
+  # this item is for when the rank is completed
+  completed-deny-click-item: LIGHT
+  # if auto-size is enabled, then the next gui-options won't do anything
+  # size of gui
+  size: 27
+  # whether the players have to go through the ranks in order
+  orderly-progression: true
+  rank-slots:
+  - 10-16
+  layout:
+    '1':
+      # which slots will be filled - <x> or <x>-<y> where x < y
+      slot: 0-26
+      # item is an item from custom-items
+      item: fill
+    '2':
+      slot: 0
+      item: custom-item-example
+    '3':
+      slot: 18
+      item: back
+    '4':
+      slot: 26
+      item: next
+    '5':
+      slot: 22
+      item: exit
+# the menu that will open when a player clicks on a rank (if confirmation is enabled in the config)
+confirmation:
+  gui-name: '&6&lAre you sure?'
+  add-page: false
+  auto-size: false
+  remove-page-items: true
+  deny-click-item: DISABLE
+  completed-deny-click-item: DISABLE
+  size: 36
+  orderly-progression: true
+  rank-slots:
+  - '13'
+  layout:
+    '1':
+      slot: 0-35
+      item: fill
+    '2':
+      slot: 31
+      item: exit
+    '3':
+      slot: 20
+      item: cancel
+    '4':
+      slot: 24
+      item: confirm
+example-path:
+  gui-name: '&c&lPlayer Ranks'
+  require-permission: true # permission for this path would be notranks.example-path
+  add-page: false
+  auto-size: false
+  remove-page-items: true
+  deny-click-item: STRUCTURE_VOID
+  completed-deny-click-item: KNOWLEDGE_BOOK
+  size: 36
+  orderly-progression: true
+  rank-slots:
+  - 10-16
+  - '22'
+  layout:
+    '1':
+      slot: 0-35
+      item: fill
+    '2':
+      slot: 27
+      item: exit
+choose-prefix:
+  gui-name: '&d&lChoose Prefix'
+  require-permission: false
+  add-page: false
+  auto-size: false
+  remove-page-items: true
+  deny-click-item: DISABLE
+  completed-deny-click-item: DISABLE
+  size: 27
+  orderly-progression: false
+  rank-slots:
+  - 0-17
+  layout:
+    '1':
+      slot: 18-26
+      item: fill
+    '2':
+      slot: 22
+      item: exit
+    '3':
+      slot: 18
+      item: back
+    '4':
+      slot: 26
+      item: next
+    '5':
+      slot: 19
+      item: default-prefix
+    '6':
+      slot: 25
+      item: reset-prefix

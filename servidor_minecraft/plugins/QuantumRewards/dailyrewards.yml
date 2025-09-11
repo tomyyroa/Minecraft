@@ -1,0 +1,109 @@
+gui:
+  size: 27 # puede ser 9, 18, 27, 36, 45, 54
+  title: "&8Recompensas"
+  close-inventory: true
+
+settings:
+  claimed:
+    material: MINECART
+    sound: minecraft:block.note_block.bass
+    name: "&#ffc100Dia #%day%"
+    lore:
+      - "&#ffc100| &7Informacion:"
+      - "&#ffc100 • &7Estado: &#ffc100%status%"
+      - ""
+      - "&#ffc100| &7Recompensas:"
+      - "{rewards_lore}"
+  available:
+    material: CHEST_MINECART
+    sound: minecraft:block.note_block.bit
+    name: "&#ffc100Dia #%day%"
+    lore:
+      - "&#ffc100| &7Informacion:"
+      - "&#ffc100 • &7Estado: &#ffc100%status%"
+      - "&#ffc100 • &7Expira en: &#ffc100%expires%"
+      - ""
+      - "&#ffc100| &7Recompensas:"
+      - "{rewards_lore}"
+      - ""
+      - "&#ffc100| &7Acciones:"
+      - "&#ffc100 • &7Usa &#ffc100Clic &7para reclamar."
+  waiting:
+    material: HOPPER_MINECART
+    sound: minecraft:block.note_block.bass
+    name: "&#ffc100Dia #%day%"
+    lore:
+      - "&#ffc100| &7Informacion:"
+      - "&#ffc100 • &7Estado: &#ffc100%status%"
+      - "&#ffc100 • &7Disponible en: &#ffc100%time%"
+      - ""
+      - "&#ffc100| &7Recompensas:"
+      - "{rewards_lore}"
+  locked:
+    material: FURNACE_MINECART
+    sound: minecraft:block.note_block.bass
+    name: "&#ffc100Dia #%day%"
+    lore:
+      - "&#ffc100| &7Informacion:"
+      - "&#ffc100 • &7Estado: &#ffc100%status%"
+      - ""
+      - "&#ffc100| &7Recompensas:"
+      - "{rewards_lore}"
+
+rewards:
+  day1:
+    slot: 10
+    lore:
+      - "&#ffc100 • $1,000 &7Monedas"
+      - "&#ffc100 • x2 &7Llave Unica"
+    commands:
+      - "eco give %player% 1000"
+      - "cases key give %player% unica 2"
+  day2:
+    slot: 11
+    lore:
+      - "&#ffc100 • $2,000 &7Monedas"
+      - "&#ffc100 • x1 &7Caja Dorada"
+    commands:
+      - "eco give %player% 2000"
+      - "cases give %player% dorada 1"
+  day3:
+    slot: 12
+    lore:
+      - "&#ffc100 • $4,000 &7Monedas"
+      - "&#ffc100 • x1 &7Caja de Boosters"
+    commands:
+      - "eco give %player% 4000"
+      - "cases give %player% boosters 1"
+  day4:
+    slot: 13
+    lore:
+      - "&#ffc100 • $6,000 &7Monedas"
+      - "&#ffc100 • x1 &7Caja Magica"
+    commands:
+      - "eco give %player% 6000"
+      - "cases give %player% magica 1"
+  day5:
+    slot: 14
+    lore:
+      - "&#ffc100 • $8,000 &7Monedas"
+      - "&#ffc100 • x1 &7Caja de Boosters"
+    commands:
+      - "eco give %player% 8000"
+      - "cases give %player% boosters 1"
+  day6:
+    slot: 15
+    lore:
+      - "&#ffc100 • $10,000 &7Monedas"
+      - "&#ffc100 • x1 &7Caja Herrera"
+    commands:
+      - "eco give %player% 10000"
+      - "cases give %player% herrera 1"
+  day7:
+    slot: 16
+    lore:
+      - "&#ffc100 • $12,000 &7Monedas"
+      - "&#ffc100 • x2 &7Caja de Boosters"
+    commands:
+      - "eco give %player% 12000"
+      - "cases give %player% boosters 2"

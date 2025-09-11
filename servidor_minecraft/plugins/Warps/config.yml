@@ -1,0 +1,8 @@
+Countdowns:
+  Warp: 10
+  Home: 5
+  Spawn: 3
+Cooldowns:
+  Warp: 15
+  Home: 10
+  Spawn: 5
