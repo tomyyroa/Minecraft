@@ -622,3 +622,221 @@ java.lang.IllegalArgumentException: ACACIA_WALL_HANGING_SIGN isn't an item
 [05:10:52] [Server thread/INFO]: futira issued server command: /version BeansClear
 [05:11:30] [Server thread/INFO]: [UltimateShop] Auto saving data...
 [05:11:30] [Server thread/INFO]: [UltimateShop] If this lead to server TPS drop, you should consider disable auto save feature at config.yml!
+[05:15:45] [Server thread/INFO]: futira issued server command: /tab reload
+[05:15:45] [Server thread/INFO]: [TAB] Disabled in 1ms
+[05:15:46] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholder-refresh-intervals: Missing configuration section "placeholder-refresh-intervals.default-refresh-interval" of type Integer, using default value 500.
+[05:15:46] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholders: Missing configuration section "placeholders.date-format" of type String, using default value dd.MM.yyyy.
+[05:15:46] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholders: Missing configuration section "placeholders.time-format" of type String, using default value [HH:mm:ss / h:mm a].
+[05:15:46] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholders: Missing configuration section "placeholders.time-offset" of type Number, using default value 0.
+[05:15:46] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholders: Missing configuration section "placeholders.register-tab-expansion" of type Boolean, using default value false.
+[05:15:46] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer: Missing configuration section "header-footer.header" of type List, using default value [].
+[05:15:46] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer: Missing configuration section "header-footer.footer" of type List, using default value [].
+[05:15:46] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer: Missing configuration section "header-footer.disable-condition" of type String, using default value %world%=disabledworld.
+[05:15:46] [Server thread/INFO]: [TAB] [WARN] [config.yml] playerlist-objective: Playerlist objective value is set to be empty, but the configured value must evaluate to a number. Using 0.
+[05:15:46] [Server thread/INFO]: [TAB] [WARN] [config.yml] playerlist-objective: Missing configuration section "playerlist-objective.fancy-value" of type String, using default value &7Ping: %ping%.
+[05:15:46] [Server thread/INFO]: [TAB] [WARN] [config.yml] playerlist-objective: Missing configuration section "playerlist-objective.disable-condition" of type String, using default value %world%=disabledworld.
+[05:15:46] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.case-sensitive-sorting" of type Boolean, using default value true.
+[05:15:46] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.sorting-types" of type List, using default value [].
+[05:15:46] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.enable-collision" of type Object, using default value true.
+[05:15:46] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.invisible-nametags" of type Boolean, using default value false.
+[05:15:46] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.can-see-friendly-invisibles" of type Boolean, using default value false.
+[05:15:46] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.disable-condition" of type String, using default value %world%=disabledworld.
+[05:15:46] [Server thread/INFO]: [TAB] [WARN] [config.yml] Layout feature breaks playerlist-objective feature, because it replaces real player with fake slots with different usernames for more reliable functionality. Disable playerlist-objective feature, as it will only look bad and consume resources.
+[05:15:46] [Server thread/INFO]: [TAB] [WARN] Failed to load skin by id: No skin with the id '383747683' was found
+[05:15:46] [Server thread/INFO]: [TAB] [WARN] Found a total of 18 issues.
+[05:15:46] [Server thread/INFO]: [TAB] Enabled in 821ms
+[05:15:55] [Server thread/INFO]: Named entity Bat['[Level 2] Bat'/1086, uuid='1aef24e6-b1e9-4a64-86dc-ef7b29a54244', l='ServerLevel[world]', x=115.45, y=4.10, z=-60.25, cpos=[7, -4], tl=1101, v=true] died: [Level 2] Bat burned to death
+[05:16:30] [Server thread/INFO]: [UltimateShop] Auto saving data...
+[05:16:30] [Server thread/INFO]: [UltimateShop] If this lead to server TPS drop, you should consider disable auto save feature at config.yml!
+[05:16:41] [Server thread/INFO]: Named entity Bat['[Level 2] Bat'/1149, uuid='8de5348c-6867-419b-aab9-d5b9819e85f8', l='ServerLevel[world]', x=118.07, y=2.51, z=-58.64, cpos=[7, -4], tl=1275, v=true] died: [Level 2] Bat tried to swim in lava
+[05:16:53] [Server thread/INFO]: futira issued server command: /tab reload
+[05:16:53] [Server thread/INFO]: [TAB] Disabled in 1ms
+[05:16:53] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholder-refresh-intervals: Missing configuration section "placeholder-refresh-intervals.default-refresh-interval" of type Integer, using default value 500.
+[05:16:53] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholders: Missing configuration section "placeholders.date-format" of type String, using default value dd.MM.yyyy.
+[05:16:53] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholders: Missing configuration section "placeholders.time-format" of type String, using default value [HH:mm:ss / h:mm a].
+[05:16:53] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholders: Missing configuration section "placeholders.time-offset" of type Number, using default value 0.
+[05:16:53] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholders: Missing configuration section "placeholders.register-tab-expansion" of type Boolean, using default value false.
+[05:16:53] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer: Missing configuration section "header-footer.header" of type List, using default value [].
+[05:16:53] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer: Missing configuration section "header-footer.footer" of type List, using default value [].
+[05:16:53] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer: Missing configuration section "header-footer.disable-condition" of type String, using default value %world%=disabledworld.
+[05:16:53] [Server thread/INFO]: [TAB] [WARN] [config.yml] playerlist-objective: Playerlist objective value is set to be empty, but the configured value must evaluate to a number. Using 0.
+[05:16:53] [Server thread/INFO]: [TAB] [WARN] [config.yml] playerlist-objective: Missing configuration section "playerlist-objective.fancy-value" of type String, using default value &7Ping: %ping%.
+[05:16:53] [Server thread/INFO]: [TAB] [WARN] [config.yml] playerlist-objective: Missing configuration section "playerlist-objective.disable-condition" of type String, using default value %world%=disabledworld.
+[05:16:53] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.case-sensitive-sorting" of type Boolean, using default value true.
+[05:16:53] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.sorting-types" of type List, using default value [].
+[05:16:53] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.enable-collision" of type Object, using default value true.
+[05:16:53] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.invisible-nametags" of type Boolean, using default value false.
+[05:16:53] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.can-see-friendly-invisibles" of type Boolean, using default value false.
+[05:16:53] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.disable-condition" of type String, using default value %world%=disabledworld.
+[05:16:53] [Server thread/INFO]: [TAB] [WARN] [config.yml] Layout feature breaks playerlist-objective feature, because it replaces real player with fake slots with different usernames for more reliable functionality. Disable playerlist-objective feature, as it will only look bad and consume resources.
+[05:16:53] [Server thread/INFO]: [TAB] [WARN] Failed to load skin by id: No skin with the id '383747683' was found
+[05:16:53] [Server thread/INFO]: [TAB] [WARN] Found a total of 18 issues.
+[05:16:53] [Server thread/INFO]: [TAB] Enabled in 39ms
+[05:16:56] [Server thread/INFO]: futira issued server command: /tab reload
+[05:16:56] [Server thread/INFO]: [TAB] Disabled in 0ms
+[05:16:56] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholder-refresh-intervals: Missing configuration section "placeholder-refresh-intervals.default-refresh-interval" of type Integer, using default value 500.
+[05:16:56] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholders: Missing configuration section "placeholders.date-format" of type String, using default value dd.MM.yyyy.
+[05:16:56] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholders: Missing configuration section "placeholders.time-format" of type String, using default value [HH:mm:ss / h:mm a].
+[05:16:56] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholders: Missing configuration section "placeholders.time-offset" of type Number, using default value 0.
+[05:16:56] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholders: Missing configuration section "placeholders.register-tab-expansion" of type Boolean, using default value false.
+[05:16:56] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer: Missing configuration section "header-footer.header" of type List, using default value [].
+[05:16:56] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer: Missing configuration section "header-footer.footer" of type List, using default value [].
+[05:16:56] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer: Missing configuration section "header-footer.disable-condition" of type String, using default value %world%=disabledworld.
+[05:16:56] [Server thread/INFO]: [TAB] [WARN] [config.yml] playerlist-objective: Playerlist objective value is set to be empty, but the configured value must evaluate to a number. Using 0.
+[05:16:56] [Server thread/INFO]: [TAB] [WARN] [config.yml] playerlist-objective: Missing configuration section "playerlist-objective.fancy-value" of type String, using default value &7Ping: %ping%.
+[05:16:56] [Server thread/INFO]: [TAB] [WARN] [config.yml] playerlist-objective: Missing configuration section "playerlist-objective.disable-condition" of type String, using default value %world%=disabledworld.
+[05:16:56] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.case-sensitive-sorting" of type Boolean, using default value true.
+[05:16:56] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.sorting-types" of type List, using default value [].
+[05:16:56] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.enable-collision" of type Object, using default value true.
+[05:16:56] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.invisible-nametags" of type Boolean, using default value false.
+[05:16:56] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.can-see-friendly-invisibles" of type Boolean, using default value false.
+[05:16:56] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.disable-condition" of type String, using default value %world%=disabledworld.
+[05:16:56] [Server thread/INFO]: [TAB] [WARN] [config.yml] Layout feature breaks playerlist-objective feature, because it replaces real player with fake slots with different usernames for more reliable functionality. Disable playerlist-objective feature, as it will only look bad and consume resources.
+[05:16:56] [Server thread/INFO]: [TAB] [WARN] Failed to load skin by id: No skin with the id '383747683' was found
+[05:16:56] [Server thread/INFO]: [TAB] [WARN] Found a total of 18 issues.
+[05:16:56] [Server thread/INFO]: [TAB] Enabled in 43ms
+[05:16:59] [Async Chat Thread - #0/INFO]: [Not Secure] <futira> ha
+[05:18:13] [Server thread/INFO]: futira issued server command: /tab reload
+[05:18:13] [Server thread/INFO]: [TAB] Disabled in 0ms
+[05:18:13] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholder-refresh-intervals: Missing configuration section "placeholder-refresh-intervals.default-refresh-interval" of type Integer, using default value 500.
+[05:18:13] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholders: Missing configuration section "placeholders.date-format" of type String, using default value dd.MM.yyyy.
+[05:18:13] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholders: Missing configuration section "placeholders.time-format" of type String, using default value [HH:mm:ss / h:mm a].
+[05:18:13] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholders: Missing configuration section "placeholders.time-offset" of type Number, using default value 0.
+[05:18:13] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholders: Missing configuration section "placeholders.register-tab-expansion" of type Boolean, using default value false.
+[05:18:13] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer: Missing configuration section "header-footer.header" of type List, using default value [].
+[05:18:13] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer: Missing configuration section "header-footer.footer" of type List, using default value [].
+[05:18:13] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer: Missing configuration section "header-footer.disable-condition" of type String, using default value %world%=disabledworld.
+[05:18:13] [Server thread/INFO]: [TAB] [WARN] [config.yml] playerlist-objective: Playerlist objective value is set to be empty, but the configured value must evaluate to a number. Using 0.
+[05:18:13] [Server thread/INFO]: [TAB] [WARN] [config.yml] playerlist-objective: Missing configuration section "playerlist-objective.fancy-value" of type String, using default value &7Ping: %ping%.
+[05:18:13] [Server thread/INFO]: [TAB] [WARN] [config.yml] playerlist-objective: Missing configuration section "playerlist-objective.disable-condition" of type String, using default value %world%=disabledworld.
+[05:18:13] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.case-sensitive-sorting" of type Boolean, using default value true.
+[05:18:13] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.sorting-types" of type List, using default value [].
+[05:18:13] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.enable-collision" of type Object, using default value true.
+[05:18:13] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.invisible-nametags" of type Boolean, using default value false.
+[05:18:13] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.can-see-friendly-invisibles" of type Boolean, using default value false.
+[05:18:13] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.disable-condition" of type String, using default value %world%=disabledworld.
+[05:18:13] [Server thread/INFO]: [TAB] [WARN] [config.yml] Layout feature breaks playerlist-objective feature, because it replaces real player with fake slots with different usernames for more reliable functionality. Disable playerlist-objective feature, as it will only look bad and consume resources.
+[05:18:13] [Server thread/INFO]: [TAB] [WARN] [animations.yml] .layout: Configuration section ".layout" has unknown key "enabled". Valid keys: [change-interval, texts]
+[05:18:13] [Server thread/INFO]: [TAB] [WARN] [animations.yml] .layout: Configuration section ".layout" has unknown key "direction". Valid keys: [change-interval, texts]
+[05:18:13] [Server thread/INFO]: [TAB] [WARN] [animations.yml] .layout: Configuration section ".layout" has unknown key "default-skin". Valid keys: [change-interval, texts]
+[05:18:13] [Server thread/INFO]: [TAB] [WARN] [animations.yml] .layout: Configuration section ".layout" has unknown key "enable-remaining-players-text". Valid keys: [change-interval, texts]
+[05:18:13] [Server thread/INFO]: [TAB] [WARN] [animations.yml] .layout: Configuration section ".layout" has unknown key "remaining-players-text". Valid keys: [change-interval, texts]
+[05:18:13] [Server thread/INFO]: [TAB] [WARN] [animations.yml] .layout: Configuration section ".layout" has unknown key "empty-slot-ping-value". Valid keys: [change-interval, texts]
+[05:18:13] [Server thread/INFO]: [TAB] [WARN] [animations.yml] .layout: Configuration section ".layout" has unknown key "layouts". Valid keys: [change-interval, texts]
+[05:18:13] [Server thread/INFO]: [TAB] [WARN] [animations.yml] .layout: Animation "layout" does not define change-interval! Did you forget to configure it? Using 1000.
+[05:18:13] [Server thread/INFO]: [TAB] [WARN] [animations.yml] .layout: Missing configuration section ".layout.texts" of type List, using default value [<Animation does not have any texts>].
+[05:18:13] [Server thread/INFO]: [TAB] [WARN] Failed to load skin by id: No skin with the id '383747683' was found
+[05:18:13] [Server thread/INFO]: [TAB] [WARN] Found a total of 27 issues.
+[05:18:13] [Server thread/INFO]: [TAB] Enabled in 33ms
+[05:18:23] [Server thread/INFO]: futira issued server command: /tab reload
+[05:18:23] [Server thread/INFO]: [TAB] Disabled in 1ms
+[05:18:23] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholder-refresh-intervals: Missing configuration section "placeholder-refresh-intervals.default-refresh-interval" of type Integer, using default value 500.
+[05:18:23] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholders: Missing configuration section "placeholders.date-format" of type String, using default value dd.MM.yyyy.
+[05:18:23] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholders: Missing configuration section "placeholders.time-format" of type String, using default value [HH:mm:ss / h:mm a].
+[05:18:23] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholders: Missing configuration section "placeholders.time-offset" of type Number, using default value 0.
+[05:18:23] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholders: Missing configuration section "placeholders.register-tab-expansion" of type Boolean, using default value false.
+[05:18:23] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer: Missing configuration section "header-footer.header" of type List, using default value [].
+[05:18:23] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer: Missing configuration section "header-footer.footer" of type List, using default value [].
+[05:18:23] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer: Missing configuration section "header-footer.disable-condition" of type String, using default value %world%=disabledworld.
+[05:18:23] [Server thread/INFO]: [TAB] [WARN] [config.yml] playerlist-objective: Playerlist objective value is set to be empty, but the configured value must evaluate to a number. Using 0.
+[05:18:23] [Server thread/INFO]: [TAB] [WARN] [config.yml] playerlist-objective: Missing configuration section "playerlist-objective.fancy-value" of type String, using default value &7Ping: %ping%.
+[05:18:23] [Server thread/INFO]: [TAB] [WARN] [config.yml] playerlist-objective: Missing configuration section "playerlist-objective.disable-condition" of type String, using default value %world%=disabledworld.
+[05:18:23] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.case-sensitive-sorting" of type Boolean, using default value true.
+[05:18:23] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.sorting-types" of type List, using default value [].
+[05:18:23] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.enable-collision" of type Object, using default value true.
+[05:18:23] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.invisible-nametags" of type Boolean, using default value false.
+[05:18:23] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.can-see-friendly-invisibles" of type Boolean, using default value false.
+[05:18:23] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.disable-condition" of type String, using default value %world%=disabledworld.
+[05:18:23] [Server thread/INFO]: [TAB] [WARN] [config.yml] Layout feature breaks playerlist-objective feature, because it replaces real player with fake slots with different usernames for more reliable functionality. Disable playerlist-objective feature, as it will only look bad and consume resources.
+[05:18:23] [Server thread/INFO]: [TAB] [WARN] [animations.yml] .layout: Configuration section ".layout" has unknown key "enabled". Valid keys: [change-interval, texts]
+[05:18:23] [Server thread/INFO]: [TAB] [WARN] [animations.yml] .layout: Configuration section ".layout" has unknown key "direction". Valid keys: [change-interval, texts]
+[05:18:23] [Server thread/INFO]: [TAB] [WARN] [animations.yml] .layout: Configuration section ".layout" has unknown key "default-skin". Valid keys: [change-interval, texts]
+[05:18:23] [Server thread/INFO]: [TAB] [WARN] [animations.yml] .layout: Configuration section ".layout" has unknown key "enable-remaining-players-text". Valid keys: [change-interval, texts]
+[05:18:23] [Server thread/INFO]: [TAB] [WARN] [animations.yml] .layout: Configuration section ".layout" has unknown key "remaining-players-text". Valid keys: [change-interval, texts]
+[05:18:23] [Server thread/INFO]: [TAB] [WARN] [animations.yml] .layout: Configuration section ".layout" has unknown key "empty-slot-ping-value". Valid keys: [change-interval, texts]
+[05:18:23] [Server thread/INFO]: [TAB] [WARN] [animations.yml] .layout: Configuration section ".layout" has unknown key "layouts". Valid keys: [change-interval, texts]
+[05:18:23] [Server thread/INFO]: [TAB] [WARN] [animations.yml] .layout: Animation "layout" does not define change-interval! Did you forget to configure it? Using 1000.
+[05:18:23] [Server thread/INFO]: [TAB] [WARN] [animations.yml] .layout: Missing configuration section ".layout.texts" of type List, using default value [<Animation does not have any texts>].
+[05:18:23] [Server thread/INFO]: [TAB] [WARN] Failed to load skin by id: No skin with the id '383747683' was found
+[05:18:23] [Server thread/INFO]: [TAB] [WARN] Found a total of 27 issues.
+[05:18:23] [Server thread/INFO]: [TAB] Enabled in 39ms
+[05:21:26] [Server thread/INFO]: futira issued server command: /time set day
+[05:21:30] [Server thread/INFO]: [UltimateShop] Auto saving data...
+[05:21:30] [Server thread/INFO]: [UltimateShop] If this lead to server TPS drop, you should consider disable auto save feature at config.yml!
+[05:21:46] [Server thread/INFO]: Named entity Zombie['[Level 1] Zombie'/1541, uuid='b276b106-1d18-4436-bf39-238bf994d659', l='ServerLevel[world]', x=148.54, y=111.00, z=42.82, cpos=[9, 2], tl=2078, v=true] died: [Level 1] Zombie burned to death
+[05:21:49] [Server thread/INFO]: Named entity Zombie['[Level 1] Zombie'/1579, uuid='fd7b2081-ee82-4490-9195-28463b3bb620', l='ServerLevel[world]', x=88.80, y=100.00, z=37.52, cpos=[5, 2], tl=1568, v=true] died: [Level 1] Zombie burned to death
+[05:22:00] [Server thread/INFO]: Named entity Zombie['[Level 1] Zombie'/1595, uuid='8ead3b90-cfd9-4c49-b5fc-a1a89858058c', l='ServerLevel[world]', x=194.46, y=114.00, z=34.78, cpos=[12, 2], tl=1604, v=true] died: [Level 1] Zombie burned to death
+[05:22:06] [Server thread/INFO]: Named entity Zombie['[Level 4] Zombie'/1648, uuid='37e56930-bd06-4e11-9892-9ac83d779dbb', l='ServerLevel[world]', x=180.08, y=111.00, z=19.85, cpos=[11, 1], tl=1038, v=true] died: [Level 4] Zombie burned to death
+[05:22:06] [Server thread/INFO]: Named entity Skeleton['[Level 4] Skeleton'/1614, uuid='fbcf468f-4915-42db-8770-81418e50229b', l='ServerLevel[world]', x=191.53, y=110.00, z=-62.27, cpos=[11, -4], tl=1502, v=true] died: [Level 4] Skeleton burned to death
+[05:22:07] [Server thread/INFO]: Named entity Skeleton['[Level 2] Skeleton'/1594, uuid='d15b1134-2250-45c6-af87-e0fdd8fc9523', l='ServerLevel[world]', x=159.52, y=101.00, z=-119.72, cpos=[9, -8], tl=1745, v=true] died: [Level 2] Skeleton burned to death
+[05:22:14] [Server thread/INFO]: Named entity Zombie['[Level 4] Zombie'/1587, uuid='27fbd0d4-77d3-4703-b9c1-a58c8658f787', l='ServerLevel[world]', x=136.32, y=107.00, z=42.40, cpos=[8, 2], tl=1971, v=true] died: [Level 4] Zombie burned to death
+[05:22:16] [Server thread/INFO]: Named entity Zombie['[Level 3] Zombie'/1598, uuid='a0338ddc-b237-4da5-9ba0-767f77c3a82e', l='ServerLevel[world]', x=181.46, y=99.77, z=-172.45, cpos=[11, -11], tl=1870, v=true] died: [Level 3] Zombie burned to death
+[05:22:28] [Server thread/INFO]: Named entity Zombie['[Level 8] Zombie'/1575, uuid='1773eb13-50a1-49ed-a6f9-6188eeb1da9f', l='ServerLevel[world]', x=228.25, y=107.00, z=-129.50, cpos=[14, -9], tl=2388, v=true] died: [Level 8] Zombie burned to death
+[05:22:34] [Server thread/INFO]: Named entity Skeleton['[Level 9] Skeleton'/1623, uuid='875e2a47-0c40-490c-9180-b109a0787a47', l='ServerLevel[world]', x=146.27, y=109.00, z=35.55, cpos=[9, 2], tl=1915, v=true] died: [Level 9] Skeleton burned to death
+[05:22:38] [Server thread/INFO]: Named entity Skeleton['[Level 10] Skeleton'/1599, uuid='0a187660-33ae-439a-a088-763dca7418fb', l='ServerLevel[world]', x=196.33, y=106.00, z=-90.65, cpos=[12, -6], tl=2310, v=true] died: [Level 10] Skeleton burned to death
+[05:23:43] [Server thread/INFO]: Named entity GlowSquid['[Level 1] Glow squid'/1573, uuid='c7ba2353-8f05-45e3-9c75-7b059bb48910', l='ServerLevel[world]', x=219.60, y=25.00, z=-87.17, cpos=[13, -6], tl=3916, v=true] died: [Level 1] Glow squid drowned
+[05:23:56] [Server thread/INFO]: futira issued server command: /tab reload
+[05:23:56] [Server thread/INFO]: [TAB] Disabled in 0ms
+[05:23:56] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholder-refresh-intervals: Missing configuration section "placeholder-refresh-intervals.default-refresh-interval" of type Integer, using default value 500.
+[05:23:56] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholders: Missing configuration section "placeholders.date-format" of type String, using default value dd.MM.yyyy.
+[05:23:56] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholders: Missing configuration section "placeholders.time-format" of type String, using default value [HH:mm:ss / h:mm a].
+[05:23:56] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholders: Missing configuration section "placeholders.time-offset" of type Number, using default value 0.
+[05:23:56] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholders: Missing configuration section "placeholders.register-tab-expansion" of type Boolean, using default value false.
+[05:23:56] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer: Missing configuration section "header-footer.header" of type List, using default value [].
+[05:23:56] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer: Missing configuration section "header-footer.footer" of type List, using default value [].
+[05:23:56] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer: Missing configuration section "header-footer.disable-condition" of type String, using default value %world%=disabledworld.
+[05:23:56] [Server thread/INFO]: [TAB] [WARN] [config.yml] playerlist-objective: Playerlist objective value is set to be empty, but the configured value must evaluate to a number. Using 0.
+[05:23:56] [Server thread/INFO]: [TAB] [WARN] [config.yml] playerlist-objective: Missing configuration section "playerlist-objective.fancy-value" of type String, using default value &7Ping: %ping%.
+[05:23:56] [Server thread/INFO]: [TAB] [WARN] [config.yml] playerlist-objective: Missing configuration section "playerlist-objective.disable-condition" of type String, using default value %world%=disabledworld.
+[05:23:56] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.case-sensitive-sorting" of type Boolean, using default value true.
+[05:23:56] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.sorting-types" of type List, using default value [].
+[05:23:56] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.enable-collision" of type Object, using default value true.
+[05:23:56] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.invisible-nametags" of type Boolean, using default value false.
+[05:23:56] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.can-see-friendly-invisibles" of type Boolean, using default value false.
+[05:23:56] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.disable-condition" of type String, using default value %world%=disabledworld.
+[05:23:56] [Server thread/INFO]: [TAB] [WARN] [config.yml] Layout feature breaks playerlist-objective feature, because it replaces real player with fake slots with different usernames for more reliable functionality. Disable playerlist-objective feature, as it will only look bad and consume resources.
+[05:23:56] [Server thread/INFO]: [TAB] [WARN] [animations.yml] .layout: Configuration section ".layout" has unknown key "enabled". Valid keys: [change-interval, texts]
+[05:23:56] [Server thread/INFO]: [TAB] [WARN] [animations.yml] .layout: Configuration section ".layout" has unknown key "direction". Valid keys: [change-interval, texts]
+[05:23:56] [Server thread/INFO]: [TAB] [WARN] [animations.yml] .layout: Configuration section ".layout" has unknown key "default-skin". Valid keys: [change-interval, texts]
+[05:23:56] [Server thread/INFO]: [TAB] [WARN] [animations.yml] .layout: Configuration section ".layout" has unknown key "enable-remaining-players-text". Valid keys: [change-interval, texts]
+[05:23:56] [Server thread/INFO]: [TAB] [WARN] [animations.yml] .layout: Configuration section ".layout" has unknown key "remaining-players-text". Valid keys: [change-interval, texts]
+[05:23:56] [Server thread/INFO]: [TAB] [WARN] [animations.yml] .layout: Configuration section ".layout" has unknown key "empty-slot-ping-value". Valid keys: [change-interval, texts]
+[05:23:56] [Server thread/INFO]: [TAB] [WARN] [animations.yml] .layout: Configuration section ".layout" has unknown key "layouts". Valid keys: [change-interval, texts]
+[05:23:56] [Server thread/INFO]: [TAB] [WARN] [animations.yml] .layout: Animation "layout" does not define change-interval! Did you forget to configure it? Using 1000.
+[05:23:56] [Server thread/INFO]: [TAB] [WARN] [animations.yml] .layout: Missing configuration section ".layout.texts" of type List, using default value [<Animation does not have any texts>].
+[05:23:56] [Server thread/INFO]: [TAB] [WARN] Failed to load skin by id: No skin with the id '383747683' was found
+[05:23:56] [Server thread/INFO]: [TAB] [WARN] Found a total of 27 issues.
+[05:23:56] [Server thread/INFO]: [TAB] Enabled in 146ms
+[05:24:16] [Server thread/INFO]: Named entity Bat['[Level 4] Bat'/1786, uuid='d0ad96ae-3c49-4728-9ca1-cc6004b57d25', l='ServerLevel[world]', x=122.25, y=1.06, z=-58.75, cpos=[7, -4], tl=1875, v=true] died: [Level 4] Bat burned to death
+[05:25:40] [Server thread/INFO]: futira issued server command: /tab reload
+[05:25:40] [Server thread/INFO]: [TAB] Disabled in 1ms
+[05:25:40] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholder-refresh-intervals: Missing configuration section "placeholder-refresh-intervals.default-refresh-interval" of type Integer, using default value 500.
+[05:25:40] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholders: Missing configuration section "placeholders.date-format" of type String, using default value dd.MM.yyyy.
+[05:25:40] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholders: Missing configuration section "placeholders.time-format" of type String, using default value [HH:mm:ss / h:mm a].
+[05:25:40] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholders: Missing configuration section "placeholders.time-offset" of type Number, using default value 0.
+[05:25:40] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholders: Missing configuration section "placeholders.register-tab-expansion" of type Boolean, using default value false.
+[05:25:40] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer: Missing configuration section "header-footer.header" of type List, using default value [].
+[05:25:40] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer: Missing configuration section "header-footer.footer" of type List, using default value [].
+[05:25:40] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer: Missing configuration section "header-footer.disable-condition" of type String, using default value %world%=disabledworld.
+[05:25:40] [Server thread/INFO]: [TAB] [WARN] [config.yml] playerlist-objective: Playerlist objective value is set to be empty, but the configured value must evaluate to a number. Using 0.
+[05:25:40] [Server thread/INFO]: [TAB] [WARN] [config.yml] playerlist-objective: Missing configuration section "playerlist-objective.fancy-value" of type String, using default value &7Ping: %ping%.
+[05:25:40] [Server thread/INFO]: [TAB] [WARN] [config.yml] playerlist-objective: Missing configuration section "playerlist-objective.disable-condition" of type String, using default value %world%=disabledworld.
+[05:25:40] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.case-sensitive-sorting" of type Boolean, using default value true.
+[05:25:40] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.sorting-types" of type List, using default value [].
+[05:25:40] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.enable-collision" of type Object, using default value true.
+[05:25:40] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.invisible-nametags" of type Boolean, using default value false.
+[05:25:40] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.can-see-friendly-invisibles" of type Boolean, using default value false.
+[05:25:40] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.disable-condition" of type String, using default value %world%=disabledworld.
+[05:25:40] [Server thread/INFO]: [TAB] [WARN] [config.yml] Layout feature breaks playerlist-objective feature, because it replaces real player with fake slots with different usernames for more reliable functionality. Disable playerlist-objective feature, as it will only look bad and consume resources.
+[05:25:40] [Server thread/INFO]: [TAB] [WARN] [animations.yml] .layout: Configuration section ".layout" has unknown key "enabled". Valid keys: [change-interval, texts]
+[05:25:40] [Server thread/INFO]: [TAB] [WARN] [animations.yml] .layout: Configuration section ".layout" has unknown key "direction". Valid keys: [change-interval, texts]
+[05:25:40] [Server thread/INFO]: [TAB] [WARN] [animations.yml] .layout: Configuration section ".layout" has unknown key "default-skin". Valid keys: [change-interval, texts]
+[05:25:40] [Server thread/INFO]: [TAB] [WARN] [animations.yml] .layout: Configuration section ".layout" has unknown key "enable-remaining-players-text". Valid keys: [change-interval, texts]
+[05:25:40] [Server thread/INFO]: [TAB] [WARN] [animations.yml] .layout: Configuration section ".layout" has unknown key "remaining-players-text". Valid keys: [change-interval, texts]
+[05:25:40] [Server thread/INFO]: [TAB] [WARN] [animations.yml] .layout: Configuration section ".layout" has unknown key "empty-slot-ping-value". Valid keys: [change-interval, texts]
+[05:25:40] [Server thread/INFO]: [TAB] [WARN] [animations.yml] .layout: Configuration section ".layout" has unknown key "layouts". Valid keys: [change-interval, texts]
+[05:25:40] [Server thread/INFO]: [TAB] [WARN] [animations.yml] .layout: Animation "layout" does not define change-interval! Did you forget to configure it? Using 1000.
+[05:25:40] [Server thread/INFO]: [TAB] [WARN] [animations.yml] .layout: Missing configuration section ".layout.texts" of type List, using default value [<Animation does not have any texts>].
+[05:25:40] [Server thread/INFO]: [TAB] [WARN] Failed to load skin by id: No skin with the id '383747683' was found
+[05:25:40] [Server thread/INFO]: [TAB] [WARN] Found a total of 27 issues.
+[05:25:40] [Server thread/INFO]: [TAB] Enabled in 60ms
