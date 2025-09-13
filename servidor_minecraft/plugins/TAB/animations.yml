@@ -1,13 +1,114 @@
-welcome:
-  change-interval: 200ms
+MiAnimacion1: 
+  change-interval: 100
   texts:
-  - '&aBienvenido'
-  - '&bBienvenido'
-  - '&cBienvenido'
-  - '&eBienvenido'
-server-name:
-  change-interval: 300ms
+    - '&d-&3--------------'
+    - '&3-&d-&3-------------'
+    - '&3--&d-&3------------'
+    - '&3---&d-&3-----------'
+    - '&3----&d-&3----------'
+    - '&3-----&d-&3---------'
+    - '&3------&d-&3--------'
+    - '&3-------&d-&3-------'
+    - '&3--------&d-&3------'
+    - '&3---------&d-&3-----'
+    - '&3----------&d-&3----'
+    - '&3-----------&d-&3---'
+    - '&3------------&d-&3--'
+    - '&3-------------&d-&3-'
+    - '&3--------------&d-'
+    - '&3-------------&d-&3-'
+    - '&3------------&d-&3--'
+    - '&3-----------&d-&3---'
+    - '&3----------&d-&3----'
+    - '&3---------&d-&3-----'
+    - '&3--------&d-&3------'
+    - '&3-------&d-&3-------'
+    - '&3------&d-&3--------'
+    - '&3-----&d-&3---------'
+    - '&3----&d-&3----------'
+    - '&3---&d-&3-----------'
+    - '&3--&d-&3------------'
+    - '&3-&d-&3-------------'
+    - '&d-&3--------------'
+NombreServidor:
+  change-interval: 300
   texts:
-  - '&6&lServidor &f>>'
-  - '&e&lServidor &f>>'
-  - '&a&lServidor &f>>'
+  - '&c&lNombreServidor'
+  - '&c&n&lNombreServidor'
+  - '&b&lNombreServidor'
+  - '&b&l&nNombreServidor'
+  - '&e&lNombreServidor'
+  - '&e&n&lNombreServidor'
+web:
+  change-interval: 200
+  texts:
+  - '&ewww.dominio.com'
+  - '&ewww.dominio.com'
+  - '&ewww.dominio.com'
+  - '&ewww.dominio.com'
+  - '&ewww.dominio.com'
+  - '&ewww.dominio.com'
+  - '&6w&eww.dominio.com'
+  - '&ew&6w&ew.dominio.com'
+  - '&eww&6w&e.dominio.com'
+  - '&ewww&6.&edominio.com'
+  - '&ewww.&6d&eominio.com'
+  - '&ewww.d&6o&eminio.com'
+  - '&ewww.do&6m&einio.com'
+  - '&ewww.dom&6a&eino.com'
+  - '&ewww.doma&6i&enio.com'
+  - '&ewww.domai&6n&eio.com'
+  - '&ewww.dominio&6.&ecom'
+  - '&ewww.dominio.&6c&eom'
+  - '&ewww.dominio.c&6o&em'
+  - '&ewww.dominio.co&6m'
+  - '&ewww.dominio.com'
+  - '&ewww.dominio.com'
+  - '&ewww.dominio.com'
+  - '&ewww.dominio.com'
+  - '&ewww.dominio.com'
+  - '&ewww.dominio.com'
+votar:
+  change-interval: 1000
+  texts:
+  - '&avotar.dominio.com'
+  - '&a&nvotar.dominio.com'
+  - '&5votar.dominio.com'
+  - '&5&nvotar.dominio.com'
+Bienvenido:
+  change-interval: 400
+  texts:
+  - '&7&lB_'
+  - '&7&lB_'
+  - '&7&lBi_'
+  - '&7&lBie_'
+  - '&7&lBien_'
+  - '&7&lBienv_'
+  - '&7&lBienve_'
+  - '&7&lBienven_'
+  - '&7&lBienveni_'
+  - '&7&lBienvenid_'
+  - '&7&lBienvenido_'
+  - '&7&lBienvenido_'
+  - '&7&lBienvenido_'
+  - '&7&lBienvenid_'
+  - '&7&lBienveni_'
+  - '&7&lBienven_'
+  - '&7&lBienve_'
+  - '&7&lBienv_'
+  - '&7&lBien_'
+  - '&7&lBie_'
+  - '&7&lBi_'
+  - '&7&lB_'
+hora:
+  change-interval: 3000
+  texts:
+    - '&7Time &b%time%'
+    - '&7Date &b%date%'
+coloresBarra:
+  change-interval: 1000
+  texts:
+    - ROJO
+    - AZUL
+    - VERDE
+    - AMARILLO
