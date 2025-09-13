@@ -57,7 +57,7 @@ web:
   - '&ewww.do&6m&einio.com'
   - '&ewww.dom&6a&eino.com'
   - '&ewww.doma&6i&enio.com'
-  - '&ewww.domai&6n&eio.com'
+  - '&ewww.domi&6n&eio.com'
   - '&ewww.dominio&6.&ecom'
   - '&ewww.dominio.&6c&eom'
   - '&ewww.dominio.c&6o&em'
@@ -100,15 +100,15 @@ Bienvenido:
   - '&7&lBie_'
   - '&7&lBi_'
   - '&7&lB_'
-hora:
+Time:
   change-interval: 3000
   texts:
-    - '&7Time &b%time%'
-    - '&7Date &b%date%'
+    - '&7Hora &b%time%'
+    - '&7Fecha &b%date%'
 coloresBarra:
   change-interval: 1000
   texts:
-    - ROJO
-    - AZUL
-    - VERDE
-    - AMARILLO
+    - RED
+    - BLUE
+    - GREEN
+    - YELLOW
