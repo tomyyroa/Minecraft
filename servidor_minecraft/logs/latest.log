@@ -1785,3 +1785,435 @@ java.lang.IllegalArgumentException: Health value (1039.0) must be between 0 and 
 [19:37:33] [Server thread/INFO]: Named entity Skeleton['[Level 9] Skeleton'/2355, uuid='4be0af4e-ab50-4dd6-acd6-38d74d9d4e12', l='ServerLevel[world]', x=190.83, y=111.00, z=17.17, cpos=[11, 1], tl=1328, v=true] died: [Level 9] Skeleton burned to death
 [19:37:35] [Server thread/INFO]: Named entity Skeleton['[Level 6] Skeleton'/2397, uuid='dc3ba380-6174-45b8-842f-45e189245578', l='ServerLevel[world]', x=179.44, y=64.17, z=-148.70, cpos=[11, -10], tl=656, v=true] died: [Level 6] Skeleton suffocated in a wall
 [19:37:46] [Server thread/INFO]: Named entity Skeleton['[Level 2] Skeleton'/2286, uuid='5208db30-1c8a-487b-b674-9d4f6f93106e', l='ServerLevel[world]', x=134.20, y=110.00, z=-4.51, cpos=[8, -1], tl=2570, v=true] died: [Level 2] Skeleton burned to death
+[19:39:14] [Server thread/ERROR]: Could not pass event CreatureSpawnEvent to SimpleLevelsPlugin v1.0
+java.lang.IllegalArgumentException: Health value (1044.0) must be between 0 and 1024.0. (attribute base value: 1044.0)
+	at com.google.common.base.Preconditions.checkArgument(Preconditions.java:483) ~[guava-33.3.1-jre.jar:?]
+	at org.bukkit.craftbukkit.entity.CraftLivingEntity.setHealth(CraftLivingEntity.java:120) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at Simple Levels 1.5.1.jar/simplelevels.simplelevelsplugin.Mobs.onEntitySpawn(Mobs.java:101) ~[Simple Levels 1.5.1.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.21.8-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:71) ~[paper-api-1.21.8-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperEventManager.callEvent(PaperEventManager.java:54) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.callEvent(PaperPluginManagerImpl.java:131) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:628) ~[paper-api-1.21.8-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.event.CraftEventFactory.callCreatureSpawnEvent(CraftEventFactory.java:689) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at org.bukkit.craftbukkit.event.CraftEventFactory.doEntityAddEventCalling(CraftEventFactory.java:605) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.level.ServerLevel.addEntity(ServerLevel.java:1550) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.level.ServerLevel.addFreshEntity(ServerLevel.java:1477) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.block.entity.BeehiveBlockEntity.releaseOccupant(BeehiveBlockEntity.java:259) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.block.entity.BeehiveBlockEntity.releaseOccupant(BeehiveBlockEntity.java:226) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.block.entity.BeehiveBlockEntity.tickOccupants(BeehiveBlockEntity.java:325) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.block.entity.BeehiveBlockEntity.serverTick(BeehiveBlockEntity.java:343) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.chunk.LevelChunk$BoundTickingBlockEntity.tick(LevelChunk.java:929) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.chunk.LevelChunk$RebindableTickingBlockEntityWrapper.tick(LevelChunk.java:999) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.Level.tickBlockEntities(Level.java:1466) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.level.ServerLevel.tick(ServerLevel.java:819) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1724) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1530) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1252) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:310) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[19:39:22] [Server thread/ERROR]: Could not pass event CreatureSpawnEvent to SimpleLevelsPlugin v1.0
+java.lang.IllegalArgumentException: Health value (1034.0) must be between 0 and 1024.0. (attribute base value: 1034.0)
+	at com.google.common.base.Preconditions.checkArgument(Preconditions.java:483) ~[guava-33.3.1-jre.jar:?]
+	at org.bukkit.craftbukkit.entity.CraftLivingEntity.setHealth(CraftLivingEntity.java:120) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at Simple Levels 1.5.1.jar/simplelevels.simplelevelsplugin.Mobs.onEntitySpawn(Mobs.java:101) ~[Simple Levels 1.5.1.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.21.8-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:71) ~[paper-api-1.21.8-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperEventManager.callEvent(PaperEventManager.java:54) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.callEvent(PaperPluginManagerImpl.java:131) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:628) ~[paper-api-1.21.8-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.event.CraftEventFactory.callCreatureSpawnEvent(CraftEventFactory.java:689) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at org.bukkit.craftbukkit.event.CraftEventFactory.doEntityAddEventCalling(CraftEventFactory.java:605) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.level.ServerLevel.addEntity(ServerLevel.java:1550) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.level.ServerLevel.addFreshEntity(ServerLevel.java:1477) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.block.entity.BeehiveBlockEntity.releaseOccupant(BeehiveBlockEntity.java:259) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.block.entity.BeehiveBlockEntity.releaseOccupant(BeehiveBlockEntity.java:226) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.block.entity.BeehiveBlockEntity.tickOccupants(BeehiveBlockEntity.java:325) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.block.entity.BeehiveBlockEntity.serverTick(BeehiveBlockEntity.java:343) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.chunk.LevelChunk$BoundTickingBlockEntity.tick(LevelChunk.java:929) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.chunk.LevelChunk$RebindableTickingBlockEntityWrapper.tick(LevelChunk.java:999) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.Level.tickBlockEntities(Level.java:1466) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.level.ServerLevel.tick(ServerLevel.java:819) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1724) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1530) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1252) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:310) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[19:39:27] [Server thread/ERROR]: Could not pass event CreatureSpawnEvent to SimpleLevelsPlugin v1.0
+java.lang.IllegalArgumentException: Health value (1064.0) must be between 0 and 1024.0. (attribute base value: 1064.0)
+	at com.google.common.base.Preconditions.checkArgument(Preconditions.java:483) ~[guava-33.3.1-jre.jar:?]
+	at org.bukkit.craftbukkit.entity.CraftLivingEntity.setHealth(CraftLivingEntity.java:120) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at Simple Levels 1.5.1.jar/simplelevels.simplelevelsplugin.Mobs.onEntitySpawn(Mobs.java:101) ~[Simple Levels 1.5.1.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.21.8-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:71) ~[paper-api-1.21.8-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperEventManager.callEvent(PaperEventManager.java:54) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.callEvent(PaperPluginManagerImpl.java:131) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:628) ~[paper-api-1.21.8-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.event.CraftEventFactory.callCreatureSpawnEvent(CraftEventFactory.java:689) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at org.bukkit.craftbukkit.event.CraftEventFactory.doEntityAddEventCalling(CraftEventFactory.java:605) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.level.ServerLevel.addEntity(ServerLevel.java:1550) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.level.ServerLevel.addFreshEntity(ServerLevel.java:1477) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.block.entity.BeehiveBlockEntity.releaseOccupant(BeehiveBlockEntity.java:259) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.block.entity.BeehiveBlockEntity.releaseOccupant(BeehiveBlockEntity.java:226) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.block.entity.BeehiveBlockEntity.tickOccupants(BeehiveBlockEntity.java:325) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.block.entity.BeehiveBlockEntity.serverTick(BeehiveBlockEntity.java:343) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.chunk.LevelChunk$BoundTickingBlockEntity.tick(LevelChunk.java:929) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.chunk.LevelChunk$RebindableTickingBlockEntityWrapper.tick(LevelChunk.java:999) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.Level.tickBlockEntities(Level.java:1466) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.level.ServerLevel.tick(ServerLevel.java:819) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1724) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1530) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1252) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:310) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[19:39:30] [Server thread/ERROR]: Could not pass event CreatureSpawnEvent to SimpleLevelsPlugin v1.0
+java.lang.IllegalArgumentException: Health value (1059.0) must be between 0 and 1024.0. (attribute base value: 1059.0)
+	at com.google.common.base.Preconditions.checkArgument(Preconditions.java:483) ~[guava-33.3.1-jre.jar:?]
+	at org.bukkit.craftbukkit.entity.CraftLivingEntity.setHealth(CraftLivingEntity.java:120) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at Simple Levels 1.5.1.jar/simplelevels.simplelevelsplugin.Mobs.onEntitySpawn(Mobs.java:101) ~[Simple Levels 1.5.1.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.21.8-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:71) ~[paper-api-1.21.8-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperEventManager.callEvent(PaperEventManager.java:54) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.callEvent(PaperPluginManagerImpl.java:131) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:628) ~[paper-api-1.21.8-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.event.CraftEventFactory.callCreatureSpawnEvent(CraftEventFactory.java:689) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at org.bukkit.craftbukkit.event.CraftEventFactory.doEntityAddEventCalling(CraftEventFactory.java:605) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.level.ServerLevel.addEntity(ServerLevel.java:1550) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.level.ServerLevel.addFreshEntity(ServerLevel.java:1477) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.block.entity.BeehiveBlockEntity.releaseOccupant(BeehiveBlockEntity.java:259) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.block.entity.BeehiveBlockEntity.releaseOccupant(BeehiveBlockEntity.java:226) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.block.entity.BeehiveBlockEntity.tickOccupants(BeehiveBlockEntity.java:325) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.block.entity.BeehiveBlockEntity.serverTick(BeehiveBlockEntity.java:343) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.chunk.LevelChunk$BoundTickingBlockEntity.tick(LevelChunk.java:929) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.chunk.LevelChunk$RebindableTickingBlockEntityWrapper.tick(LevelChunk.java:999) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.Level.tickBlockEntities(Level.java:1466) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.level.ServerLevel.tick(ServerLevel.java:819) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1724) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1530) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1252) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:310) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[19:39:32] [Server thread/ERROR]: Could not pass event CreatureSpawnEvent to SimpleLevelsPlugin v1.0
+java.lang.IllegalArgumentException: Health value (1074.0) must be between 0 and 1024.0. (attribute base value: 1074.0)
+	at com.google.common.base.Preconditions.checkArgument(Preconditions.java:483) ~[guava-33.3.1-jre.jar:?]
+	at org.bukkit.craftbukkit.entity.CraftLivingEntity.setHealth(CraftLivingEntity.java:120) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at Simple Levels 1.5.1.jar/simplelevels.simplelevelsplugin.Mobs.onEntitySpawn(Mobs.java:101) ~[Simple Levels 1.5.1.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.21.8-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:71) ~[paper-api-1.21.8-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperEventManager.callEvent(PaperEventManager.java:54) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.callEvent(PaperPluginManagerImpl.java:131) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:628) ~[paper-api-1.21.8-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.event.CraftEventFactory.callCreatureSpawnEvent(CraftEventFactory.java:689) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at org.bukkit.craftbukkit.event.CraftEventFactory.doEntityAddEventCalling(CraftEventFactory.java:605) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.level.ServerLevel.addEntity(ServerLevel.java:1550) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.level.ServerLevel.addFreshEntity(ServerLevel.java:1477) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.block.entity.BeehiveBlockEntity.releaseOccupant(BeehiveBlockEntity.java:259) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.block.entity.BeehiveBlockEntity.releaseOccupant(BeehiveBlockEntity.java:226) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.block.entity.BeehiveBlockEntity.tickOccupants(BeehiveBlockEntity.java:325) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.block.entity.BeehiveBlockEntity.serverTick(BeehiveBlockEntity.java:343) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.chunk.LevelChunk$BoundTickingBlockEntity.tick(LevelChunk.java:929) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.chunk.LevelChunk$RebindableTickingBlockEntityWrapper.tick(LevelChunk.java:999) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.Level.tickBlockEntities(Level.java:1466) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.level.ServerLevel.tick(ServerLevel.java:819) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1724) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1530) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1252) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:310) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[19:39:42] [Server thread/INFO]: [UltimateShop] Auto saving data...
+[19:39:42] [Server thread/INFO]: [UltimateShop] If this lead to server TPS drop, you should consider disable auto save feature at config.yml!
+[19:39:47] [Server thread/ERROR]: Could not pass event CreatureSpawnEvent to SimpleLevelsPlugin v1.0
+java.lang.IllegalArgumentException: Health value (1054.0) must be between 0 and 1024.0. (attribute base value: 1054.0)
+	at com.google.common.base.Preconditions.checkArgument(Preconditions.java:483) ~[guava-33.3.1-jre.jar:?]
+	at org.bukkit.craftbukkit.entity.CraftLivingEntity.setHealth(CraftLivingEntity.java:120) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at Simple Levels 1.5.1.jar/simplelevels.simplelevelsplugin.Mobs.onEntitySpawn(Mobs.java:101) ~[Simple Levels 1.5.1.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.21.8-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:71) ~[paper-api-1.21.8-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperEventManager.callEvent(PaperEventManager.java:54) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.callEvent(PaperPluginManagerImpl.java:131) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:628) ~[paper-api-1.21.8-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.event.CraftEventFactory.callCreatureSpawnEvent(CraftEventFactory.java:689) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at org.bukkit.craftbukkit.event.CraftEventFactory.doEntityAddEventCalling(CraftEventFactory.java:605) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.level.ServerLevel.addEntity(ServerLevel.java:1550) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.level.ServerLevel.addFreshEntity(ServerLevel.java:1477) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.block.entity.BeehiveBlockEntity.releaseOccupant(BeehiveBlockEntity.java:259) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.block.entity.BeehiveBlockEntity.releaseOccupant(BeehiveBlockEntity.java:226) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.block.entity.BeehiveBlockEntity.tickOccupants(BeehiveBlockEntity.java:325) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.block.entity.BeehiveBlockEntity.serverTick(BeehiveBlockEntity.java:343) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.chunk.LevelChunk$BoundTickingBlockEntity.tick(LevelChunk.java:929) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.chunk.LevelChunk$RebindableTickingBlockEntityWrapper.tick(LevelChunk.java:999) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.Level.tickBlockEntities(Level.java:1466) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.level.ServerLevel.tick(ServerLevel.java:819) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1724) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1530) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1252) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:310) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[19:39:48] [Server thread/ERROR]: Could not pass event CreatureSpawnEvent to SimpleLevelsPlugin v1.0
+java.lang.IllegalArgumentException: Health value (1044.0) must be between 0 and 1024.0. (attribute base value: 1044.0)
+	at com.google.common.base.Preconditions.checkArgument(Preconditions.java:483) ~[guava-33.3.1-jre.jar:?]
+	at org.bukkit.craftbukkit.entity.CraftLivingEntity.setHealth(CraftLivingEntity.java:120) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at Simple Levels 1.5.1.jar/simplelevels.simplelevelsplugin.Mobs.onEntitySpawn(Mobs.java:101) ~[Simple Levels 1.5.1.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.21.8-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:71) ~[paper-api-1.21.8-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperEventManager.callEvent(PaperEventManager.java:54) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.callEvent(PaperPluginManagerImpl.java:131) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:628) ~[paper-api-1.21.8-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.event.CraftEventFactory.callCreatureSpawnEvent(CraftEventFactory.java:689) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at org.bukkit.craftbukkit.event.CraftEventFactory.doEntityAddEventCalling(CraftEventFactory.java:605) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.level.ServerLevel.addEntity(ServerLevel.java:1550) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.level.ServerLevel.addFreshEntity(ServerLevel.java:1477) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.block.entity.BeehiveBlockEntity.releaseOccupant(BeehiveBlockEntity.java:259) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.block.entity.BeehiveBlockEntity.releaseOccupant(BeehiveBlockEntity.java:226) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.block.entity.BeehiveBlockEntity.tickOccupants(BeehiveBlockEntity.java:325) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.block.entity.BeehiveBlockEntity.serverTick(BeehiveBlockEntity.java:343) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.chunk.LevelChunk$BoundTickingBlockEntity.tick(LevelChunk.java:929) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.chunk.LevelChunk$RebindableTickingBlockEntityWrapper.tick(LevelChunk.java:999) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.Level.tickBlockEntities(Level.java:1466) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.level.ServerLevel.tick(ServerLevel.java:819) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1724) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1530) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1252) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:310) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[19:41:03] [Server thread/INFO]: futira issued server command: /tab reload
+[19:41:06] [Server thread/INFO]: futira issued server command: /tab reload
+[19:41:13] [Server thread/INFO]: [TAB] Disabled in 1ms
+[19:41:13] [Server thread/INFO]: [TAB] [WARN] [config.yml] belowname-objective: Belowname title is set to "&c❤ &7| &b%statistic_hours_played%h ⌚ &7| &4☠ %statistic_player_kills%", however, the feature cannot display different title on different players due to a minecraft limitation. Placeholders will be parsed for viewing player. To display per-player placeholders correctly, move them to fancy-value and only keep static text in title (this only works on 1.20.3+, on older versions you will need to use "value", which only supports numbers).
+[19:41:13] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: tab [5.2.5]
+[19:41:13] [Server thread/INFO]: [TAB] [WARN] Player futira's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[19:41:13] [Server thread/INFO]: [TAB] [WARN] Found a total of 1 issues.
+[19:41:13] [Server thread/INFO]: [TAB] Enabled in 37ms
+[19:41:13] [Server thread/INFO]: [TAB] [TAB] Successfully reloaded
+[19:41:38] [Server thread/INFO]: futira issued server command: /claimrewards
+[19:41:41] [Server thread/ERROR]: Could not pass event CreatureSpawnEvent to SimpleLevelsPlugin v1.0
+java.lang.IllegalArgumentException: Health value (1039.0) must be between 0 and 1024.0. (attribute base value: 1039.0)
+	at com.google.common.base.Preconditions.checkArgument(Preconditions.java:483) ~[guava-33.3.1-jre.jar:?]
+	at org.bukkit.craftbukkit.entity.CraftLivingEntity.setHealth(CraftLivingEntity.java:120) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at Simple Levels 1.5.1.jar/simplelevels.simplelevelsplugin.Mobs.onEntitySpawn(Mobs.java:101) ~[Simple Levels 1.5.1.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.21.8-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:71) ~[paper-api-1.21.8-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperEventManager.callEvent(PaperEventManager.java:54) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.callEvent(PaperPluginManagerImpl.java:131) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:628) ~[paper-api-1.21.8-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.event.CraftEventFactory.callCreatureSpawnEvent(CraftEventFactory.java:689) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at org.bukkit.craftbukkit.event.CraftEventFactory.doEntityAddEventCalling(CraftEventFactory.java:605) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.level.ServerLevel.addEntity(ServerLevel.java:1550) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.level.ServerLevel.addFreshEntity(ServerLevel.java:1477) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.block.entity.BeehiveBlockEntity.releaseOccupant(BeehiveBlockEntity.java:259) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.block.entity.BeehiveBlockEntity.releaseOccupant(BeehiveBlockEntity.java:226) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.block.entity.BeehiveBlockEntity.tickOccupants(BeehiveBlockEntity.java:325) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.block.entity.BeehiveBlockEntity.serverTick(BeehiveBlockEntity.java:343) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.chunk.LevelChunk$BoundTickingBlockEntity.tick(LevelChunk.java:929) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.chunk.LevelChunk$RebindableTickingBlockEntityWrapper.tick(LevelChunk.java:999) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.Level.tickBlockEntities(Level.java:1466) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.level.ServerLevel.tick(ServerLevel.java:819) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1724) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1530) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1252) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:310) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[19:41:48] [Server thread/INFO]: futira issued server command: /claimrewards help
+[19:41:52] [Server thread/ERROR]: Could not pass event CreatureSpawnEvent to SimpleLevelsPlugin v1.0
+java.lang.IllegalArgumentException: Health value (1074.0) must be between 0 and 1024.0. (attribute base value: 1074.0)
+	at com.google.common.base.Preconditions.checkArgument(Preconditions.java:483) ~[guava-33.3.1-jre.jar:?]
+	at org.bukkit.craftbukkit.entity.CraftLivingEntity.setHealth(CraftLivingEntity.java:120) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at Simple Levels 1.5.1.jar/simplelevels.simplelevelsplugin.Mobs.onEntitySpawn(Mobs.java:101) ~[Simple Levels 1.5.1.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.21.8-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:71) ~[paper-api-1.21.8-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperEventManager.callEvent(PaperEventManager.java:54) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.callEvent(PaperPluginManagerImpl.java:131) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:628) ~[paper-api-1.21.8-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.event.CraftEventFactory.callCreatureSpawnEvent(CraftEventFactory.java:689) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at org.bukkit.craftbukkit.event.CraftEventFactory.doEntityAddEventCalling(CraftEventFactory.java:605) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.level.ServerLevel.addEntity(ServerLevel.java:1550) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.level.ServerLevel.addFreshEntity(ServerLevel.java:1477) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.block.entity.BeehiveBlockEntity.releaseOccupant(BeehiveBlockEntity.java:259) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.block.entity.BeehiveBlockEntity.releaseOccupant(BeehiveBlockEntity.java:226) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.block.entity.BeehiveBlockEntity.tickOccupants(BeehiveBlockEntity.java:325) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.block.entity.BeehiveBlockEntity.serverTick(BeehiveBlockEntity.java:343) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.chunk.LevelChunk$BoundTickingBlockEntity.tick(LevelChunk.java:929) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.chunk.LevelChunk$RebindableTickingBlockEntityWrapper.tick(LevelChunk.java:999) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.Level.tickBlockEntities(Level.java:1466) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.level.ServerLevel.tick(ServerLevel.java:819) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1724) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1530) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1252) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:310) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[19:41:53] [Server thread/INFO]: futira issued server command: /claimchest
+[19:41:58] [Server thread/ERROR]: Could not pass event CreatureSpawnEvent to SimpleLevelsPlugin v1.0
+java.lang.IllegalArgumentException: Health value (1064.0) must be between 0 and 1024.0. (attribute base value: 1064.0)
+	at com.google.common.base.Preconditions.checkArgument(Preconditions.java:483) ~[guava-33.3.1-jre.jar:?]
+	at org.bukkit.craftbukkit.entity.CraftLivingEntity.setHealth(CraftLivingEntity.java:120) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at Simple Levels 1.5.1.jar/simplelevels.simplelevelsplugin.Mobs.onEntitySpawn(Mobs.java:101) ~[Simple Levels 1.5.1.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.21.8-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:71) ~[paper-api-1.21.8-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperEventManager.callEvent(PaperEventManager.java:54) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.callEvent(PaperPluginManagerImpl.java:131) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:628) ~[paper-api-1.21.8-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.event.CraftEventFactory.callCreatureSpawnEvent(CraftEventFactory.java:689) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at org.bukkit.craftbukkit.event.CraftEventFactory.doEntityAddEventCalling(CraftEventFactory.java:605) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.level.ServerLevel.addEntity(ServerLevel.java:1550) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.level.ServerLevel.addFreshEntity(ServerLevel.java:1477) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.block.entity.BeehiveBlockEntity.releaseOccupant(BeehiveBlockEntity.java:259) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.block.entity.BeehiveBlockEntity.releaseOccupant(BeehiveBlockEntity.java:226) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.block.entity.BeehiveBlockEntity.tickOccupants(BeehiveBlockEntity.java:325) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.block.entity.BeehiveBlockEntity.serverTick(BeehiveBlockEntity.java:343) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.chunk.LevelChunk$BoundTickingBlockEntity.tick(LevelChunk.java:929) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.chunk.LevelChunk$RebindableTickingBlockEntityWrapper.tick(LevelChunk.java:999) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.Level.tickBlockEntities(Level.java:1466) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.level.ServerLevel.tick(ServerLevel.java:819) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1724) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1530) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1252) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:310) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[19:42:03] [Server thread/ERROR]: Could not pass event CreatureSpawnEvent to SimpleLevelsPlugin v1.0
+java.lang.IllegalArgumentException: Health value (1069.0) must be between 0 and 1024.0. (attribute base value: 1069.0)
+	at com.google.common.base.Preconditions.checkArgument(Preconditions.java:483) ~[guava-33.3.1-jre.jar:?]
+	at org.bukkit.craftbukkit.entity.CraftLivingEntity.setHealth(CraftLivingEntity.java:120) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at Simple Levels 1.5.1.jar/simplelevels.simplelevelsplugin.Mobs.onEntitySpawn(Mobs.java:101) ~[Simple Levels 1.5.1.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.21.8-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:71) ~[paper-api-1.21.8-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperEventManager.callEvent(PaperEventManager.java:54) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.callEvent(PaperPluginManagerImpl.java:131) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:628) ~[paper-api-1.21.8-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.event.CraftEventFactory.callCreatureSpawnEvent(CraftEventFactory.java:689) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at org.bukkit.craftbukkit.event.CraftEventFactory.doEntityAddEventCalling(CraftEventFactory.java:605) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.level.ServerLevel.addEntity(ServerLevel.java:1550) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.level.ServerLevel.addFreshEntity(ServerLevel.java:1477) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.block.entity.BeehiveBlockEntity.releaseOccupant(BeehiveBlockEntity.java:259) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.block.entity.BeehiveBlockEntity.releaseOccupant(BeehiveBlockEntity.java:226) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.block.entity.BeehiveBlockEntity.tickOccupants(BeehiveBlockEntity.java:325) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.block.entity.BeehiveBlockEntity.serverTick(BeehiveBlockEntity.java:343) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.chunk.LevelChunk$BoundTickingBlockEntity.tick(LevelChunk.java:929) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.chunk.LevelChunk$RebindableTickingBlockEntityWrapper.tick(LevelChunk.java:999) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.Level.tickBlockEntities(Level.java:1466) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.level.ServerLevel.tick(ServerLevel.java:819) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1724) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1530) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1252) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:310) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[19:42:10] [Server thread/ERROR]: Could not pass event CreatureSpawnEvent to SimpleLevelsPlugin v1.0
+java.lang.IllegalArgumentException: Health value (1054.0) must be between 0 and 1024.0. (attribute base value: 1054.0)
+	at com.google.common.base.Preconditions.checkArgument(Preconditions.java:483) ~[guava-33.3.1-jre.jar:?]
+	at org.bukkit.craftbukkit.entity.CraftLivingEntity.setHealth(CraftLivingEntity.java:120) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at Simple Levels 1.5.1.jar/simplelevels.simplelevelsplugin.Mobs.onEntitySpawn(Mobs.java:101) ~[Simple Levels 1.5.1.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.21.8-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:71) ~[paper-api-1.21.8-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperEventManager.callEvent(PaperEventManager.java:54) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.callEvent(PaperPluginManagerImpl.java:131) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:628) ~[paper-api-1.21.8-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.event.CraftEventFactory.callCreatureSpawnEvent(CraftEventFactory.java:689) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at org.bukkit.craftbukkit.event.CraftEventFactory.doEntityAddEventCalling(CraftEventFactory.java:605) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.level.ServerLevel.addEntity(ServerLevel.java:1550) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.level.ServerLevel.addFreshEntity(ServerLevel.java:1477) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.block.entity.BeehiveBlockEntity.releaseOccupant(BeehiveBlockEntity.java:259) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.block.entity.BeehiveBlockEntity.releaseOccupant(BeehiveBlockEntity.java:226) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.block.entity.BeehiveBlockEntity.tickOccupants(BeehiveBlockEntity.java:325) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.block.entity.BeehiveBlockEntity.serverTick(BeehiveBlockEntity.java:343) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.chunk.LevelChunk$BoundTickingBlockEntity.tick(LevelChunk.java:929) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.chunk.LevelChunk$RebindableTickingBlockEntityWrapper.tick(LevelChunk.java:999) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.Level.tickBlockEntities(Level.java:1466) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.level.ServerLevel.tick(ServerLevel.java:819) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1724) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1530) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1252) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:310) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[19:42:13] [Server thread/ERROR]: Could not pass event CreatureSpawnEvent to SimpleLevelsPlugin v1.0
+java.lang.IllegalArgumentException: Health value (1039.0) must be between 0 and 1024.0. (attribute base value: 1039.0)
+	at com.google.common.base.Preconditions.checkArgument(Preconditions.java:483) ~[guava-33.3.1-jre.jar:?]
+	at org.bukkit.craftbukkit.entity.CraftLivingEntity.setHealth(CraftLivingEntity.java:120) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at Simple Levels 1.5.1.jar/simplelevels.simplelevelsplugin.Mobs.onEntitySpawn(Mobs.java:101) ~[Simple Levels 1.5.1.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.21.8-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:71) ~[paper-api-1.21.8-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperEventManager.callEvent(PaperEventManager.java:54) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.callEvent(PaperPluginManagerImpl.java:131) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:628) ~[paper-api-1.21.8-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.event.CraftEventFactory.callCreatureSpawnEvent(CraftEventFactory.java:689) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at org.bukkit.craftbukkit.event.CraftEventFactory.doEntityAddEventCalling(CraftEventFactory.java:605) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.level.ServerLevel.addEntity(ServerLevel.java:1550) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.level.ServerLevel.addFreshEntity(ServerLevel.java:1477) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.block.entity.BeehiveBlockEntity.releaseOccupant(BeehiveBlockEntity.java:259) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.block.entity.BeehiveBlockEntity.releaseOccupant(BeehiveBlockEntity.java:226) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.block.entity.BeehiveBlockEntity.tickOccupants(BeehiveBlockEntity.java:325) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.block.entity.BeehiveBlockEntity.serverTick(BeehiveBlockEntity.java:343) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.chunk.LevelChunk$BoundTickingBlockEntity.tick(LevelChunk.java:929) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.chunk.LevelChunk$RebindableTickingBlockEntityWrapper.tick(LevelChunk.java:999) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.Level.tickBlockEntities(Level.java:1466) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.level.ServerLevel.tick(ServerLevel.java:819) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1724) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1530) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1252) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:310) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[19:42:46] [Server thread/INFO]: futira lost connection: Disconnected
+[19:42:46] [ForkJoinPool.commonPool-worker-9/WARN]: org.sqlite.SQLiteException: [SQLITE_READONLY_DBMOVED] The database file has been moved since it was opened (attempt to write a readonly database)
+[19:42:46] [ForkJoinPool.commonPool-worker-9/WARN]: 	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+[19:42:46] [ForkJoinPool.commonPool-worker-9/WARN]: 	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+[19:42:46] [ForkJoinPool.commonPool-worker-9/WARN]: 	at org.sqlite.core.DB.execute(DB.java:988)
+[19:42:46] [ForkJoinPool.commonPool-worker-9/WARN]: 	at org.sqlite.jdbc3.JDBC3PreparedStatement.lambda$execute$0(JDBC3PreparedStatement.java:59)
+[19:42:46] [ForkJoinPool.commonPool-worker-9/WARN]: 	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:458)
+[19:42:46] [ForkJoinPool.commonPool-worker-9/WARN]: 	at org.sqlite.jdbc3.JDBC3PreparedStatement.execute(JDBC3PreparedStatement.java:53)
+[19:42:46] [ForkJoinPool.commonPool-worker-9/WARN]: 	at AnimatedScoreboard.jar//me.jasperjh.animatedscoreboard.storage.SQLiteStorage.save(SQLiteStorage.java:93)
+[19:42:46] [ForkJoinPool.commonPool-worker-9/WARN]: 	at AnimatedScoreboard.jar//me.jasperjh.animatedscoreboard.storage.SQLiteStorage.lambda$setScoreboardEnabled$1(SQLiteStorage.java:85)
+[19:42:46] [ForkJoinPool.commonPool-worker-9/WARN]: 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+[19:42:46] [ForkJoinPool.commonPool-worker-9/WARN]: 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796)
+[19:42:46] [ForkJoinPool.commonPool-worker-9/WARN]: 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+[19:42:46] [ForkJoinPool.commonPool-worker-9/WARN]: 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+[19:42:46] [ForkJoinPool.commonPool-worker-9/WARN]: 	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+[19:42:46] [ForkJoinPool.commonPool-worker-9/WARN]: 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+[19:42:46] [ForkJoinPool.commonPool-worker-9/WARN]: 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+[19:42:46] [Server thread/INFO]: [-] futira
+[19:44:42] [Server thread/INFO]: [UltimateShop] Auto saving data...
+[19:44:42] [Server thread/INFO]: [UltimateShop] If this lead to server TPS drop, you should consider disable auto save feature at config.yml!
+[19:45:15] [User Authenticator #2/INFO]: UUID of player futira is 519d5cea-771e-3af0-9b91-e6b39d893604
+[19:45:17] [TAB Processing Thread/INFO]: [TAB] [WARN] Player futira's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[19:45:17] [Server thread/INFO]: [+] futira
+[19:45:17] [Server thread/INFO]: futira[/127.214.184.169:38797] logged in with entity id 2908 at ([world]167.32390600979792, 112.0, -78.92287368228557)
+[19:45:50] [Server thread/INFO]: futira issued server command: /tab reload
+[19:46:07] [Server thread/INFO]: Made futira a server operator
+[19:46:10] [Server thread/INFO]: futira issued server command: /tab reload
+[19:46:10] [Server thread/INFO]: [TAB] Disabled in 0ms
+[19:46:10] [Server thread/INFO]: [TAB] [WARN] [config.yml] belowname-objective: Belowname title is set to "&c❤ &7| &b%statistic_hours_played%h ⌚ &7| &4☠ %statistic_player_kills%", however, the feature cannot display different title on different players due to a minecraft limitation. Placeholders will be parsed for viewing player. To display per-player placeholders correctly, move them to fancy-value and only keep static text in title (this only works on 1.20.3+, on older versions you will need to use "value", which only supports numbers).
+[19:46:10] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: tab [5.2.5]
+[19:46:10] [Server thread/INFO]: [TAB] [WARN] Player futira's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[19:46:10] [Server thread/INFO]: [TAB] [WARN] Found a total of 1 issues.
+[19:46:10] [Server thread/INFO]: [TAB] Enabled in 6ms
+[19:46:29] [Server thread/INFO]: futira issued server command: /papi ecloud download LuckPerms
+[19:46:29] [placeholderapi-io-#3/INFO]: [PlaceholderAPI] Fetching available expansion information...
+[19:46:35] [Server thread/INFO]: futira issued server command: /papi reload
+[19:46:35] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
+[19:46:35] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
+[19:46:35] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: world [1.2.3]
+[19:46:35] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: servertime [3.2]
+[19:46:35] [Server thread/WARN]: [PlaceholderAPI] Cannot load expansion ServerWebsite due to a missing plugin: ServerWebsite
+[19:46:35] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: player [2.0.8]
+[19:46:35] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: Advancements [1.7]
+[19:46:35] [Server thread/WARN]: [PlaceholderAPI] Cannot load expansion playerstats due to a missing plugin: PlayerStats
+[19:46:35] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: playerlist [3.0.8]
+[19:46:35] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: Animations [1.0.5]
+[19:46:35] [Server thread/WARN]: [PlaceholderAPI] Cannot load expansion playertime due to a missing plugin: PlayerTime
+[19:46:35] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: essentials [1.5.2]
+[19:46:35] [Server thread/WARN]: [PlaceholderAPI] Cannot load expansion luckperms due to a missing plugin: LuckPerms
+[19:46:35] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: statistic [2.0.2]
+[19:46:35] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: server [2.7.3]
+[19:46:39] [Server thread/INFO]: futira issued server command: /papi reload
+[19:46:39] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
+[19:46:39] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
+[19:46:39] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: world [1.2.3]
+[19:46:39] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: servertime [3.2]
+[19:46:39] [Server thread/WARN]: [PlaceholderAPI] Cannot load expansion ServerWebsite due to a missing plugin: ServerWebsite
+[19:46:39] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: player [2.0.8]
+[19:46:39] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: Advancements [1.7]
+[19:46:39] [Server thread/WARN]: [PlaceholderAPI] Cannot load expansion playerstats due to a missing plugin: PlayerStats
+[19:46:39] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: playerlist [3.0.8]
+[19:46:39] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: Animations [1.0.5]
+[19:46:39] [Server thread/WARN]: [PlaceholderAPI] Cannot load expansion playertime due to a missing plugin: PlayerTime
+[19:46:39] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: essentials [1.5.2]
+[19:46:39] [Server thread/WARN]: [PlaceholderAPI] Cannot load expansion luckperms due to a missing plugin: LuckPerms
+[19:46:39] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: statistic [2.0.2]
+[19:46:39] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: server [2.7.3]
