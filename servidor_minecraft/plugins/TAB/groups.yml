@@ -1,20 +1,16 @@
-# Ejemplo de grupo (comentado)
 #Owner:
-#  tabprefix: "&0&l[&a&lDueño&0&l] &a"
-#  tagprefix: "&2&lDueño &a"
-
+#  tabprefix: "&0&l[&a&lOwner&0&l] &a"
+#  tagprefix: "&2&lOwner &a"
 Player:
-  tabprefix: "&0&l[&7&lJugador&0&l] &3"
-  tagprefix: "&2&lJugador &3"
-
+  tabprefix: "&0&l[&7&lPlayer&0&l] &3"
+  tagprefix: "&2&lPlayer &3"
 example_group:
   header:
-    - "Este es un ejemplo de header/footer por grupo"
+    - "This is an example of per-group header/footer"
   footer:
-    - "aplicado a un grupo"
+    - "applied to a group"
 
-# Configuración por defecto para todos los grupos.
-# Todos los grupos heredarán estas propiedades a menos que su grupo primario las sobrescriba.
+ # default settings for all groups, all groups will take properties from this section unless player's primary group overrides a specific setting
 _DEFAULT_:
   tabprefix: "%luckperms-prefix%"
   tagprefix: "%luckperms-prefix%"
@@ -25,5 +21,5 @@ _DEFAULT_:
 per-world:
   world1:
     Owner:
-      tabprefix: "&0&l[&a&lDueño&0&l] &a"
-      tagprefix: "&2&lDueño &a"
+      tabprefix: "&0&l[&a&lOwner&0&l] &a"
+      tagprefix: "&2&lOwner &a"
