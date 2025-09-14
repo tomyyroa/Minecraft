@@ -1,14 +1,6 @@
 519d5cea-771e-3af0-9b91-e6b39d893604:
-  login: 1757792717265
-  money: 477000.0
-  balancehidden: false
+  login: 1757873443446
+  money: 777000.0
+  balancehidden: true
   silent: false
-  logout: 1757792566446
-  logoutLocation:
-    ==: org.bukkit.Location
-    world: world
-    x: 167.32390600979792
-    y: 112.0
-    z: -78.92287368228557
-    pitch: 3.9058456
-    yaw: 170.05148
+  logout: 1757804792577
