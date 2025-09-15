@@ -1,0 +1,59 @@
+locale: es
+
+es:
+  mensajes:
+    prefijo: "&6[Clanes] &f"
+    creado: "%prefijo% Clan %clan% creado con éxito."
+    ya_existe: "%prefijo% Ya existe un clan con ese nombre."
+    sin_clan: "%prefijo% No tienes un clan."
+    clan_salido: "%prefijo% Has salido del clan %clan%."
+    permiso_denegado: "%prefijo% No tienes permiso para hacer esto."
+    ingresa_nombre: "%prefijo% Ingresa un nombre para tu clan."
+    uso_chat_clan: "%prefijo% Usa /clan <mensaje> para enviar mensajes a tu clan."
+    chat_activado: "%prefijo% Chat del clan activado."
+    chat_desactivado: "%prefijo% Chat del clan desactivado."
+    clan_miembros_titulo: "Miembros del clan %clan% - Página "
+    volver: "§eVolver"
+    recargado: "%prefijo% Configuraciones recargadas correctamente."
+    ayuda: |
+      %prefijo% Comandos disponibles:
+      &e/clan &7- Abre el menú de clanes
+      &e/clan <mensaje> &7- Envía mensaje al clan
+      &e/clanplus reload &7- Recarga configuración del plugin
+
+  gui:
+    opciones_gui_titulo: "Opciones de Clan"
+    crear_clan_opcion: "§aCrear Clan"
+    salir_clan_opcion: "§cSalir del Clan"
+    ver_miembros_opcion: "§bVer Miembros"
+    chat_clan_activar: "§aHabilitar Chat del Clan"
+    chat_clan_desactivar: "§cDeshabilitar Chat del Clan"
+
+en:
+  mensajes:
+    prefijo: "&6[Clans] &f"
+    creado: "%prefijo% Clan %clan% created successfully."
+    ya_existe: "%prefijo% A clan with that name already exists."
+    sin_clan: "%prefijo% You don't have a clan."
+    clan_salido: "%prefijo% You left the clan %clan%."
+    permiso_denegado: "%prefijo% You don't have permission to do this."
+    ingresa_nombre: "%prefijo% Enter a name for your clan."
+    uso_chat_clan: "%prefijo% Use /clan <message> to send messages to your clan."
+    chat_activado: "%prefijo% Clan chat enabled."
+    chat_desactivado: "%prefijo% Clan chat disabled."
+    clan_miembros_titulo: "Members of clan %clan% - Page "
+    volver: "§eBack"
+    recargado: "%prefijo% Configuration reloaded successfully."
+    ayuda: |
+      %prefijo% Available commands:
+      &e/clan &7- Opens the clan menu
+      &e/clan <message> &7- Sends message to your clan
+      &e/clanplus reload &7- Reloads plugin configuration
+
+  gui:
+    opciones_gui_titulo: "Clan Options"
+    crear_clan_opcion: "§aCreate Clan"
+    salir_clan_opcion: "§cLeave Clan"
+    ver_miembros_opcion: "§bView Members"
+    chat_clan_activar: "§aEnable Clan Chat"
+    chat_clan_desactivar: "§cDisable Clan Chat"

@@ -1,0 +1,8 @@
+# voidspawn.sk
+# Evita la muerte en el vacío y te manda al spawn del mismo mundo
+
+on damage of player:
+    if damage cause is void:
+        cancel event
+        teleport victim to spawn point of world of victim
+        send "&aHas sido teletransportado al spawn de este mundo." to victim

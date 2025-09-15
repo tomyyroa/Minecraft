@@ -14,7 +14,8 @@ regions:
         min: {x: -86, y: -41, z: -99}
         max: {x: 69, y: 145, z: 64}
         members: {}
-        flags: {build: deny, use: allow, mob-damage: deny, interact: allow, mob-spawning: deny}
+        flags: {build: deny, use: allow, mob-damage: deny, interact: allow, pvp: deny,
+            mob-spawning: deny}
         owners: {}
         type: cuboid
         priority: 0

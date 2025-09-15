@@ -1,0 +1,16 @@
+# VoidSpawn Config
+
+color-logs: true
+
+# Mundo default (si no hay configuración específica)
+world: world
+# VoidTeleport Config
+
+# Altura a partir de la cual se considera vacío
+void-level: -1
+
+# Teletransportar al spawn del mismo mundo
+teleport-to-world-spawn: true
+
+# Mensaje opcional
+message: '&aHas sido enviado al hub.'
