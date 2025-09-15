@@ -589,3 +589,23 @@ Until this is resolved, PlayTimeManager will not be able to manage permissions o
 [05:48:34] [Server thread/INFO]: [UltimateShop] If this lead to server TPS drop, you should consider disable auto save feature at config.yml!
 [05:53:34] [Server thread/INFO]: [UltimateShop] Auto saving data...
 [05:53:34] [Server thread/INFO]: [UltimateShop] If this lead to server TPS drop, you should consider disable auto save feature at config.yml!
+[05:58:17] [User Authenticator #0/INFO]: UUID of player futira is 519d5cea-771e-3af0-9b91-e6b39d893604
+[05:58:17] [Server thread/INFO]: [HorriblePlayerLoginEventHack] You have plugins listening to the PlayerLoginEvent, this will cause re-configuration APIs to be unavailable: [UltimateShop, VoidGen, SkinsRestorer, Essentials, ProtocolLib, WorldGuard]
+[05:58:18] [TAB Processing Thread/INFO]: [TAB] [WARN] Player futira's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[05:58:18] [Server thread/INFO]: (Staff) futira has joined the game
+[05:58:18] [Server thread/INFO]: + futira Connected
+[05:58:18] [Server thread/INFO]: futira[/127.214.184.169:35215] logged in with entity id 82 at ([Lobby]-0.839666747061799, 63.9375, -10.667535271636105)
+[05:58:34] [Server thread/INFO]: [UltimateShop] Auto saving data...
+[05:58:34] [Server thread/INFO]: [UltimateShop] If this lead to server TPS drop, you should consider disable auto save feature at config.yml!
+[05:59:04] [Server thread/INFO]: futira issued server command: /gm1
+[05:59:05] [Server thread/INFO]: futira issued server command: /gm 1
+[06:02:41] [Server thread/INFO]: futira issued server command: /plugins
+[06:03:31] [Server thread/INFO]: futira issued server command: /mvtp world
+[06:03:34] [Server thread/INFO]: [UltimateShop] Auto saving data...
+[06:03:34] [Server thread/INFO]: [UltimateShop] If this lead to server TPS drop, you should consider disable auto save feature at config.yml!
+[06:03:40] [Server thread/INFO]: futira issued server command: /gm 1
+[06:04:01] [Server thread/INFO]: futira issued server command: /mvtp Lobby
+[06:04:09] [Server thread/INFO]: futira issued server command: /gm 1
+[06:04:11] [Server thread/INFO]: futira issued server command: /mvtp world
+[06:04:13] [Server thread/INFO]: futira issued server command: /gm 1
+[06:04:26] [Server thread/INFO]: futira issued server command: /mvtp Lobby
