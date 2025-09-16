@@ -697,3 +697,25 @@ Until this is resolved, PlayTimeManager will not be able to manage permissions o
 [01:01:59] [Server thread/INFO]: futira issued server command: /gm 0
 [01:01:59] [Server thread/INFO]: futira issued mycmd (gamemode_alias) command /gm 0
 [01:01:59] [Server thread/INFO]: futira issued server command: /gamemode 0
+[01:03:31] [Server thread/INFO]: [UltimateShop] Auto saving data...
+[01:03:31] [Server thread/INFO]: [UltimateShop] If this lead to server TPS drop, you should consider disable auto save feature at config.yml!
+[01:07:20] [Server thread/INFO]: [Essentials] checking if futira has essentials.afk.auto - false
+[01:07:22] [Server thread/INFO]: [Essentials] checking if futira has essentials.afk.auto - false
+[01:07:25] [Server thread/INFO]: [Essentials] checking if futira has essentials.afk.auto - false
+[01:07:27] [Server thread/INFO]: [Essentials] checking if futira has essentials.afk.auto - false
+[01:07:30] [Server thread/INFO]: [Essentials] checking if futira has essentials.afk.auto - false
+[01:07:32] [Server thread/INFO]: [Essentials] checking if futira has essentials.afk.auto - false
+[01:07:35] [Server thread/INFO]: [Essentials] checking if futira has essentials.afk.auto - false
+[01:07:37] [Server thread/INFO]: [Essentials] checking if futira has essentials.afk.auto - false
+[01:07:40] [Server thread/INFO]: [Essentials] checking if futira has essentials.afk.auto - false
+[01:07:42] [Server thread/INFO]: [Essentials] checking if futira has essentials.afk.auto - false
+[01:07:45] [Server thread/INFO]: [Essentials] checking if futira has essentials.afk.auto - false
+[01:07:47] [Server thread/INFO]: [Essentials] checking if futira has essentials.afk.auto - false
+[01:07:50] [Server thread/INFO]: [Essentials] checking if futira has essentials.afk.auto - false
+[01:07:52] [Server thread/INFO]: [Essentials] checking if futira has essentials.afk.auto - false
+[01:08:31] [Server thread/INFO]: [UltimateShop] Auto saving data...
+[01:08:31] [Server thread/INFO]: [UltimateShop] If this lead to server TPS drop, you should consider disable auto save feature at config.yml!
+[01:12:41] [Server thread/INFO]: futira issued server command: /plugins
+[01:12:43] [Server thread/INFO]: futira issued server command: /recompensas
+[01:12:45] [Server thread/INFO]: Deposited $4000.00 into futira's balance. New Balance: $783000.00
+[01:12:45] [Server thread/INFO]: Crates » boosters is not a valid crate!
