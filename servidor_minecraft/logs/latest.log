@@ -623,3 +623,26 @@ Until this is resolved, PlayTimeManager will not be able to manage permissions o
 [00:35:06] [Server thread/INFO]: futira issued server command: /gamemode 1
 [00:38:31] [Server thread/INFO]: [UltimateShop] Auto saving data...
 [00:38:31] [Server thread/INFO]: [UltimateShop] If this lead to server TPS drop, you should consider disable auto save feature at config.yml!
+[00:42:39] [Server thread/INFO]: futira issued server command: /time set day
+[00:43:31] [Server thread/INFO]: [UltimateShop] Auto saving data...
+[00:43:31] [Server thread/INFO]: [UltimateShop] If this lead to server TPS drop, you should consider disable auto save feature at config.yml!
+[00:44:43] [Server thread/INFO]: futira issued server command: /plugins
+[00:46:41] [Server thread/INFO]: futira issued server command: /deluxehub reload
+[00:46:41] [Server thread/INFO]: [DeluxeHub] Loaded custom menu 'serverselector'.
+[00:46:41] [Server thread/INFO]: [DeluxeHub] Loaded 10 plugin modules.
+[00:46:52] [Server thread/INFO]: futira issued server command: /mvtp Lobby
+[00:46:58] [Server thread/INFO]: futira issued server command: /time set day
+[00:47:03] [Server thread/INFO]: futira issued server command: /deluxehub reload
+[00:47:03] [Server thread/INFO]: [DeluxeHub] Loaded custom menu 'serverselector'.
+[00:47:03] [Server thread/INFO]: [DeluxeHub] Loaded 10 plugin modules.
+[00:47:19] [Server thread/INFO]: futira issued server command: /gm 1
+[00:47:19] [Server thread/INFO]: futira issued mycmd (gamemode_alias) command /gm 1
+[00:47:19] [Server thread/INFO]: futira issued server command: /gamemode 1
+[00:47:42] [Server thread/INFO]: futira issued server command: /dh reload
+[00:47:50] [Server thread/INFO]: futira issued server command: /dhub reload
+[00:47:50] [Server thread/INFO]: [DeluxeHub] Loaded custom menu 'serverselector'.
+[00:47:50] [Server thread/INFO]: [DeluxeHub] Loaded 10 plugin modules.
+[00:48:31] [Server thread/INFO]: [UltimateShop] Auto saving data...
+[00:48:31] [Server thread/INFO]: [UltimateShop] If this lead to server TPS drop, you should consider disable auto save feature at config.yml!
+[00:48:58] [Server thread/INFO]: futira issued server command: /rg info __global__
+[00:49:27] [WorldGuard Region I/O/INFO]: [WorldGuard] Region data changes made in 'Lobby' have been background saved

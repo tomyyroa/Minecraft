@@ -12,13 +12,13 @@ settings:
 
   # Bloquear que los jugadores puedan dañar, romper, etc.
   world_settings:
-    disable_block_break: true
-    disable_block_place: true
+    disable_block_break: false
+    disable_block_place: false
     disable_block_interact: false
-    disable_item_drop: true
-    disable_item_pickup: true
-    disable_inventory_movement: true
-    disable_damage: true
+    disable_item_drop: false
+    disable_item_pickup: false
+    disable_inventory_movement: false
+    disable_damage: false
     disable_hunger: true
     disable_weather: true
     disable_fall_damage: true
