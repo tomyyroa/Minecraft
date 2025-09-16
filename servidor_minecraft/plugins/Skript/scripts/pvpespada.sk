@@ -1,0 +1,46 @@
+options:
+  pvp-sword-name: "&cEspada PvP"
+  delay: 10
+
+# =======================
+# ACTIVAR PvP
+# =======================
+on tool change:
+  if name of tool of player is {@pvp-sword-name}:
+    if {pvp.%player%} is not "on":
+      loop {@delay} times:
+        set {_t} to {@delay} - loop-number + 1
+        send action bar "&e[PvP] &7Activando en &c%{_t}% &7segundos..." to player
+        wait 1 second
+        if name of tool of player is not {@pvp-sword-name}:
+          stop
+      if name of tool of player is {@pvp-sword-name}:
+        execute player command "pvp on"
+        set {pvp.%player%} to "on"
+        send action bar "&e[PvP] &a¡Activado!" to player
+        equip player with diamond helmet
+        equip player with diamond chestplate
+        equip player with diamond leggings
+        equip player with diamond boots
+        give player 16 golden apple
+
+# =======================
+# DESACTIVAR PvP
+# =======================
+on tool change:
+  if name of tool of player is not {@pvp-sword-name}:
+    if {pvp.%player%} is "on":
+      loop {@delay} times:
+        set {_t} to {@delay} - loop-number + 1
+        send action bar "&e[PvP] &7Desactivando en &c%{_t}% &7segundos..." to player
+        wait 1 second
+        if name of tool of player is {@pvp-sword-name}:
+          stop
+      if name of tool of player is not {@pvp-sword-name}:
+        execute player command "pvp off"
+        set {pvp.%player%} to "off"
+        send action bar "&e[PvP] &c¡Desactivado!" to player
+        clear helmet of player
+        clear chestplate of player
+        clear leggings of player
+        clear boots of player

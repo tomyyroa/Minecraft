@@ -1,1 +1,7 @@
 [15-09-2025 05:27:48] Plugin Loaded!
+[15-09-2025 05:27:48] Plugin disabling.
+[15-09-2025 06:16:48] Plugin Loaded!
+[15-09-2025 06:16:48] Plugin disabling.
+[15-09-2025 06:28:59] Plugin Loaded!
+[15-09-2025 06:28:59] Plugin disabling.
+[15-09-2025 06:48:58] Plugin Loaded!

@@ -1790,3 +1790,53 @@ Enchantment:
   unbreaking: Unbreaking
   vanishing_curse: Curse of Vanishing
   wind_burst: Wind Burst
+DamageType:
+  mace_smash: Mace Smash
+  cactus: Cactus
+  thorns: Thorns
+  in_fire: In Fire
+  starve: Starve
+  ender_pearl: Ender Pearl
+  player_explosion: Player Explosion
+  fly_into_wall: Fly Into Wall
+  unattributed_fireball: Unattributed Fireball
+  wind_charge: Wind Charge
+  fireworks: Fireworks
+  generic_kill: Generic Kill
+  generic: Generic
+  out_of_world: Out Of World
+  thrown: Thrown
+  mob_projectile: Mob Projectile
+  explosion: Explosion
+  wither: Wither
+  magic: Magic
+  freeze: Freeze
+  mob_attack_no_aggro: Mob Attack No Aggro
+  sweet_berry_bush: Sweet Berry Bush
+  arrow: Arrow
+  outside_border: Outside Border
+  falling_anvil: Falling Anvil
+  sonic_boom: Sonic Boom
+  falling_block: Falling Block
+  fall: Fall
+  lava: Lava
+  falling_stalactite: Falling Stalactite
+  mob_attack: Mob Attack
+  campfire: Campfire
+  stalagmite: Stalagmite
+  indirect_magic: Indirect Magic
+  drown: Drown
+  spit: Spit
+  hot_floor: Hot Floor
+  cramming: Cramming
+  lightning_bolt: Lightning Bolt
+  on_fire: On Fire
+  in_wall: In Wall
+  bad_respawn_point: Bad Respawn Point
+  fireball: Fireball
+  dragon_breath: Dragon Breath
+  wither_skull: Wither Skull
+  trident: Trident
+  dry_out: Dry Out
+  player_attack: Player Attack
+  sting: Sting

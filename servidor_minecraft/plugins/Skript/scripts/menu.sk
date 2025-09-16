@@ -1,0 +1,8 @@
+command /menu:
+    trigger:
+        open chest inventory with 3 rows named "&a&lMenú Principal" to player
+        wait 1 tick
+        format slot 10 of player's current inventory with compass named "&eSelector de Servidores" with lore "&7Click para ir al lobby" to close then run command "/lobby"
+        format slot 12 of player's current inventory with emerald named "&aTienda" with lore "&7Compra rangos y más" to close then run command "/shop"
+        format slot 14 of player's current inventory with book named "&bInformación" with lore "&7Discord: discord.gg/tuserver" to nothing
+        format slot 16 of player's current inventory with diamond sword named "&cSurvival" with lore "&7Ir al survival" to close then run command "/server survival"
