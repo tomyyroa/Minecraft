@@ -1,129 +1,93 @@
-# DeluxeHub configuration - Hub protegido
+# ==========================
+# DeluxeHub Config Limpia
+# ==========================
 
-settings:
-  # Prefijo de mensajes
-  prefix: "&b&lHub &8» "
+check-updates: true
 
-  # Idioma
-  locale: "es_ES"
+# Solo funciona en el mundo Lobby
+disabled-worlds:
+  invert: true
+  worlds:
+    - Lobby
 
-  # Mundo principal del Hub
-  spawn_world: "world"
+scoreboard:
+  enabled: false
 
-  # Bloquear que los jugadores puedan dañar, romper, etc.
-  world_settings:
-    disable_block_break: false
-    disable_block_place: false
-    disable_block_interact: false
-    disable_item_drop: false
-    disable_item_pickup: false
-    disable_inventory_movement: false
-    disable_damage: false
-    disable_hunger: true
-    disable_weather: true
-    disable_fall_damage: true
-    disable_void_teleport: true
-    void_teleport_location: "world, 0, 100, 0"
+tablist:
+  enabled: false
 
-# =============================
-#   ÍTEMS DEL HUB (Hotbar)
-# =============================
+announcements:
+  enabled: false
+
+launchpad:
+  enabled: false
+
+double_jump:
+  enabled: false
+
+command_block:
+  enabled: true
+  blocked_commands:
+    - /pl
+    - /plugins
+    - /ver
+    - /version
+
+world_settings:
+  # Solo aplican en Lobby (por disabled-worlds invert:true)
+  disable_hunger_loss: true
+  disable_fall_damage: true
+  disable_player_pvp: true
+  disable_void_death: true
+  disable_fire_damage: true
+  disable_drowning: true
+
+  disable_weather_change: true
+  disable_mob_spawning: true
+
+  # ⚠️ Importante: solo bloqueamos drop/pickup, no movimiento
+  disable_item_drop: true
+  disable_item_pickup: true
+  disable_inventory_movement: false
+
+  disable_block_break: true
+  disable_block_place: true
+  disable_block_interact: true
+
+join_leave_messages:
+  enabled: true
+  join_message: "&a%player% entró al Lobby"
+  quit_message: "&c%player% salió del Lobby"
+
+join_events:
+  - "[GAMEMODE] survival"
+
+join_settings:
+  spawn_join: true
+  heal: true
+  extinguish: true
+  clear_inventory: true
+
 custom_join_items:
   enabled: true
-  disable_inventory_movement: true
+  disable_inventory_movement: false
   items:
-    # Brújula de selector
-    "0":
-      material: COMPASS
+    info:
+      material: BOOK
       slot: 0
-      name: "&a&lSelector de Juegos"
+      display_name: "&dInformación"
       lore:
-        - "&7Haz clic para abrir el menú."
-      command: "menu juegos"
-      glow: true
-      unbreakable: true
-
-    # Espada PvP
-    "1":
-      material: DIAMOND_SWORD
-      slot: 1
-      name: "&c&lEspada PvP"
-      lore:
-        - "&7Activa el PvP después de 10s."
-      command: "pvp toggle"
-      glow: true
-      unbreakable: true
-
-    # Lobby selector
-    "4":
+        - "&7Haz clic derecho para ver info"
+      actions:
+        - "[MESSAGE] Bienvenido a nuestro servidor!"
+    selector:
       material: NETHER_STAR
       slot: 4
-      name: "&e&lSelector de Lobby"
+      display_name: "&eSelector de Servidor"
       lore:
-        - "&7Cambia entre los lobbies disponibles."
-      command: "servers"
-      glow: true
-      unbreakable: true
+        - "&7Haz clic derecho para abrir el menú"
+      actions:
+        - "[MESSAGE] Aquí abriría tu menú de servers"
 
-    # Tienda
-    "7":
-      material: EMERALD
-      slot: 7
-      name: "&a&lTienda"
-      lore:
-        - "&7Haz clic para abrir la tienda."
-      command: "tienda"
-      glow: true
-      unbreakable: true
-
-    # Perfil
-    "8":
-      material: PLAYER_HEAD
-      slot: 8
-      name: "&b&lPerfil"
-      lore:
-        - "&7Mira tu información."
-      command: "perfil"
-      glow: true
-      unbreakable: true
-
-# =============================
-#   SCOREBOARD
-# =============================
-scoreboard:
-  enabled: true
-  title: "&b&lServidor Network"
-  lines:
-    - "&7&m----------------"
-    - "&fJugador: &a%player_name%"
-    - "&fLobby: &b%server_name%"
-    - "&fOnline: &a%server_online%"
-    - "&7&m----------------"
-    - "&eplay.tuservidor.com"
-
-# =============================
-#   TABLIST
-# =============================
-tablist:
-  enabled: true
-  header:
-    - "&b&lServidor Network"
-    - "&7Bienvenido &a%player_name%"
-  footer:
-    - "&fDisfruta tu estancia!"
-    - "&eplay.tuservidor.com"
-
-# =============================
-#   CHAT
-# =============================
-chat:
-  enabled: true
-  format: "&7[%luckperms_prefix%&7] &f%player_name% &8» &7%message%"
-
-# =============================
-#   JOIN / QUIT
-# =============================
-join-quit:
-  enabled: true
-  join-message: "&a%player_name% &7ha entrado al &bHub"
-  quit-message: "&c%player_name% &7ha salido del &bHub"
+player_hider:
+  enabled: false

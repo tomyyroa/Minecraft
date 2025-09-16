@@ -1,0 +1,7 @@
+on inventory click:
+    if event is cancelled:
+        send "&c[DEBUG] Otro plugin está bloqueando tu inventario (Click)."
+
+on drop:
+    if event is cancelled:
+        send "&c[DEBUG] Otro plugin está bloqueando tu inventario (Drop)."
